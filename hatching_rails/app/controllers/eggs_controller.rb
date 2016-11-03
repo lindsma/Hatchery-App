@@ -1,17 +1,19 @@
 class EggsController < ApplicationController
   def create
+    # @egg = Egg.new egg_params
+    # @egg.total += params[:input]
+    # if @egg.save
+    #   result = {}
+    #   result[:total] = @egg.total
+    #   render json: result
+    # else
+    #   result = {}
+    #   render json: result
+    # end
     @egg = Egg.new egg_params
-    if @egg.save
-      result = {}
-      result[:total] = @egg.total
-      render json: result
-    else
-      result = {
-        ok: false,
-        error: @egg.error.full_messages
-      }
-      render json: result, status: 422
-    end
+    result = {}
+    result[:total] = @egg.total
+    render json: result
   end
 
   def show
@@ -24,10 +26,11 @@ class EggsController < ApplicationController
   def update
     puts params
     if current_user.rank == "admin"
-      @egg.total += params[:whateverfrontendpasses]
+      #if user.admin true
+      @egg.total += params[:input]
     else
-      @egg.total = @egg.total - params[:whateverfrontendpasses]
-      user.eggs += params[:users_eggs]
+      @egg.total = @egg.total - params[:input]
+      user.eggs += params[:input]
     end
     edited = {}
     edited[:total] = @egg.total

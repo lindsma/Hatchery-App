@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161103204109) do
+=======
+ActiveRecord::Schema.define(version: 20161103183740) do
+>>>>>>> fab19e25c26d35a9c9ddb0af53ed2c249dc4f784
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "users", force: :cascade do |t|
     t.string   "username"
     t.string   "email"
@@ -22,6 +27,12 @@ ActiveRecord::Schema.define(version: 20161103204109) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.string   "auth_token"
+=======
+  create_table "eggs", force: :cascade do |t|
+    t.integer  "total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+>>>>>>> fab19e25c26d35a9c9ddb0af53ed2c249dc4f784
   end
 
 end
