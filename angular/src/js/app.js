@@ -1,4 +1,7 @@
-(function($) {
-  "use strict";
+(function() {
+  'use strict';
 
-})(jQuery);
+  var hatcheryApp = angular.module('hatcheryApp', ['ui.router', 'LocalStorageModule']);
+
+
+})();
