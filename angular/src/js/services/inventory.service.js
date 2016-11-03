@@ -14,19 +14,26 @@ angular.module('hatcheryApp')
   function printEggs(array) {
     console.log('in printEggs');
   }
-  return {
-    add: addEggs
-    print: printEggs
-  }
-})
-//use set Timeout to print the array.
+  this.getNewTotal = function(callback){
+    $http.get('src/mock/items.json').then(callback);
+    
+  };
+
+//   this.sendJSON(callback){
+// $http.post('/create', data, config).then(successCallback);  }
+//   return {
+//     add: addEggs
+//     print: printEggs
+//   }
+// })
+// //use set Timeout to print the array.
 
 
 .factory('EggFactory', function(){
 return function Egg(){
   return {
     id: Date.now(),
-    image: "assets/tan-egg.png"
+    image: "/images/tan-egg.png"
   }
 };
 });
