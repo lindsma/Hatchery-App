@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  post '/create' => 'Eggs#create'
-  get '/show' => 'Eggs#show'
-  put '/edit' => 'Eggs#update'
+  post '/create' => 'eggs#create'
+  get '/show' => 'eggs#show'
+  put '/edit' => 'eggs#update'
 end
