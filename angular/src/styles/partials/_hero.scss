@@ -1,0 +1,80 @@
+.env-hero {
+    height: 300px;
+    background: $aeroBlue;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+    .temp {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      color: $white;
+      font-size: 80px;
+      font-family: $rubik;
+      text-shadow: 2px 2px $topaz;
+
+      span {
+        font-size: 60px;
+      }
+    }
+
+    img {
+        float: right;
+        position: absolute;
+    }
+
+    .chicken-1 {
+        height: 100px;
+        bottom: 10px;
+        left: 10%;
+    }
+
+    .chicken-2 {
+        height: 150px;
+        bottom: 10px;
+        left: 50%;
+    }
+
+    .chicken-3 {
+        height: 320px;
+        bottom: 10px;
+        left: 60%;
+    }
+
+    .chicken-4 {
+        height: 100px;
+        bottom: 10px;
+        left: 65%;
+    }
+
+    .chicken-5 {
+        height: 150px;
+        bottom: 10px;
+        left: 80%;
+    }
+
+    .chicken-6 {
+        height: 150px;
+        bottom: 10px;
+        left: 40%;
+    }
+
+    .chicken-7 {
+        height: 150px;
+        bottom: 10px;
+        left: 15%;
+    }
+
+    .chicken-8 {
+        height: 100px;
+        bottom: 10px;
+        left: 5%;
+    }
+
+    .chicken-9 {
+        height: 350px;
+        bottom: 10px;
+        left: 20%;
+    }
+}
