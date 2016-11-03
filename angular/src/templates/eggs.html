@@ -1,0 +1,10 @@
+<div class="eggs-show-container" ng-controller="InventoryController as ictrl">
+
+  <label class="enter-egg-number" for="enter-egg-number">How many eggs would you like to claim?  </label>
+  <input name="enter-egg-number" ng-model="ictrl.number" class="enter-egg-number" type="number"/>
+  <button ng-click="ictrl.printArray(ictrl.number)">Submit Order</button>
+  <div ng-repeat="egg in ictrl.eggClaim">
+    <span alt="egg.id">Here is where stuff goes{{egg.id}}</span>
+    <img src="{{egg.image}}" class="egg-pic"/>
+  </div>
+</div>

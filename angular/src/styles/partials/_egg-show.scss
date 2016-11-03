@@ -1,0 +1,38 @@
+// COLORS
+$brightYellow: #FF9F1C;
+$topaz: #FFBF69;
+$white: #ffffff;
+$aeroBlue: #CBF3F0;
+$maxBlueGreen: #2EC4B6; // FONTS
+$bungee: 'Bungee Hairline', cursive;
+
+.eggs-show-container {
+    font-family: $bungee;
+    font-size: 1.5rem;
+    background: $maxBlueGreen;
+    display: flex;
+    height: 68vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+}
+
+input{
+  width: 8%;
+  background: $aeroBlue;
+  color: $maxBlueGreen;
+  outline-color: $brightYellow;
+}
+.enter-egg-number {
+    display: flex;
+    height: 2vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    margin: 2%;
+    font-size: 1.25rem;
+}
+.egg-pic {
+  height: 3vh;
+  width: 3vw;
+}
