@@ -10,7 +10,7 @@ class EggsController < ApplicationController
         ok: false,
         error: @egg.error.full_messages
       }
-      render json: { ok: false }, status: 422
+      render json: result, status: 422
     end
   end
 
@@ -21,8 +21,17 @@ class EggsController < ApplicationController
     render json: inventory
   end
 
-  def update(@egg)
-    @users_get = @egg - params[:users_eggs]
+  def update
+    puts params
+    if current_user.rank == "admin"
+      @egg.total += params[:whateverfrontendpasses]
+    else
+      @egg.total = @egg.total - params[:whateverfrontendpasses]
+      user.eggs += params[:users_eggs]
+    end
+    edited = {}
+    edited[:total] = @egg.total
+    render json: edited
   end
 
   private
