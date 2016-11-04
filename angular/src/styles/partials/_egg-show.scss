@@ -67,8 +67,9 @@ input{
   position: absolute;
   bottom: -0vh;
   left: -138px;
+  transition: all 0.2s ease-in-out;
   &.active {
-    animation: dance 2s infinite;
+    animation: dance 2s 0 1;
   }
 }
 @keyframes dance {
