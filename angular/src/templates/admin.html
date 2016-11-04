@@ -1,12 +1,12 @@
-<div class="admin">
+<div class="admin" ng-cloak>
 
-  <button class="update-admin-info submit-btn" ng-click="show=!show">Edit Admin Info</button>
+  <button class="update-admin-info closed submit-btn" ng-click="show=!show; closed=!closed">Edit Admin Info</button>
 
 
   <form novalidate ng-hide="!show" name="update-info" id="update-info-form">
-    New Admin Name: <input type="text" ng-model="this.name" />
-    New Admin Password: <input type="password" ng-model="this.password" />
-    Confirm New Admin Password: <input type="password" ng-model="this.password2" />
+    <input type="text" ng-model="this.name" placeholder="Enter New User Name"/>
+    <input type="password" ng-model="this.password" placeholder="Enter New Password"/>
+    <input type="password" ng-model="this.password2" placeholder="Confirm Your Password"/>
     <button class="submit-btn" type="submit" ng-click="admin.updateUser(this.name, this.password, this.password2)">Save</button>
   </form>
 </div>

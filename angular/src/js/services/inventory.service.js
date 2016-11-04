@@ -16,16 +16,16 @@ angular.module('hatcheryApp')
   }
   /*this function makes an API GET call and performs the callback function specified by the controller*/
   this.getJSON = function(callback){
-    $http.get('src/mock/items.json').then(callback);
+    $http.get('https://glacial-anchorage-56426.herokuapp.com/show').then(callback);
   };
   /*this function makes an API PUT call based on number from controller function*/
   this.sendJSON = function(object){
-    return $http.post('localhost:3000/create', object);
+    return $http.post('https://glacial-anchorage-56426.herokuapp.com/create', object);
     console.log('in sendJSON: post initial object');
   }
   /*this function makes an API PUT call based on number from controller function*/
   this.editJSON = function(object){
-    return $http.put('localhost:3000/edit', object);
+    return $http.put('https://glacial-anchorage-56426.herokuapp.com/edit', object);
     console.log('in editJSON: put object');
   }
 })

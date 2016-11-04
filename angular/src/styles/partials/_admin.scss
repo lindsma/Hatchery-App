@@ -9,5 +9,35 @@ $bungee: 'Bungee Hairline', cursive;
 .admin {
   display: flex;
   align-items: center;
-  background: $maxBlueGreen;
+  background: $topaz;
+  position: absolute;
+  top: 54%;
+  left: 3%;
+  #update-info-form {
+    background: $white;
+    height: 40vh;
+    width: 67%;
+    border: 2px solid $maxBlueGreen;
+    font-family: "Rubik", sans-serif;
+    margin: 1%;
+    transform: translate(26%);
+    border: 2px solid $brightYellow;
+      input {
+        width: 98%;
+        line-height: 3rem;
+        margin: 1%;
+        font-size: 1.25rem;
+        text-align: center;
+        &:focus {
+          outline-color: $maxBlueGreen;
+        }
+      }
+      button {
+        margin: 3% 42%;
+      }
+  }
+  .closed {
+    position: absolute;
+    top: 9vh;
+  }
 }

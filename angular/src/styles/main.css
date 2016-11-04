@@ -101,7 +101,8 @@ input {
   text-align: center; }
   .submit-btn:hover {
     cursor: pointer;
-    border-radius: 20px; }
+    border-radius: 20px;
+    outline: #2EC4B6; }
 
 .tan-egg {
   height: 24vh;
@@ -439,5 +440,35 @@ header {
     margin: 0 10px;
     padding: 10px 0;
     height: 100%; }
+
+.admin {
+  display: flex;
+  align-items: center;
+  background: #FFBF69;
+  position: absolute;
+  top: 54%;
+  left: 3%; }
+  .admin #update-info-form {
+    background: #ffffff;
+    height: 40vh;
+    width: 67%;
+    border: 2px solid #2EC4B6;
+    font-family: "Rubik", sans-serif;
+    margin: 1%;
+    transform: translate(26%);
+    border: 2px solid #FF9F1C; }
+    .admin #update-info-form input {
+      width: 98%;
+      line-height: 3rem;
+      margin: 1%;
+      font-size: 1.25rem;
+      text-align: center; }
+      .admin #update-info-form input:focus {
+        outline-color: #2EC4B6; }
+    .admin #update-info-form button {
+      margin: 3% 42%; }
+  .admin .closed {
+    position: absolute;
+    top: 9vh; }
 
 /*# sourceMappingURL=main.css.map */
