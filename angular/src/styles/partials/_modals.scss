@@ -1,0 +1,19 @@
+.modal {
+  height: 200px;
+  background: $white;
+  width: 300px;
+  margin: 0 auto;
+  border: 5px solid $brightYellow;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+
+  .modal-content {
+    font-family: $rubik;
+    margin: 0 10px;
+    padding: 10px 0;
+    height: 100%;
+
+  }
+}

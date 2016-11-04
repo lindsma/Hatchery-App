@@ -4,12 +4,20 @@
 
 @function rem($pxval) {
   @if not unitless($pxval) {
+<<<<<<< HEAD
       $pxval: strip-units($pxval);
+=======
+    $pxval: strip-units($pxval);
+>>>>>>> master
   }
 
   $base: $em-base;
   @if not unitless($base) {
+<<<<<<< HEAD
       $base: strip-units($base);
+=======
+    $base: strip-units($base);
+>>>>>>> master
   }
   @return ($pxval / $base) * 1rem;
 }

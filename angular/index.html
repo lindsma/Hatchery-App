@@ -4,56 +4,37 @@
 <head>
     <meta charset='UTF-8'>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title></title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Hatchery</title>
+    <link rel="shortcut icon" href="images/chicken.png" type="image/x-icon">
+    <link rel="icon" href="images/chicken.png" type="image/x-icon">
     <link rel="stylesheet" href="lib/styles/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Rubik" rel="stylesheet">
 </head>
 
-<body ng-app='hatcheryApp' ng-controller='InventoryController as inventory'>
+<body ng-app='hatcheryApp'>
     <header>
         <img class='chicken-logo' src='images/chicken.png' alt='chicken logo'>
         <h1>Hatchery</h1>
-        <a href='#' class='button register'>register</a>
-        <a href='#' class='button login'>login</a>
+        <a ui-sref='hatcheryParent.register' class='button register'>register</a>
+        <a ui-sref='hatcheryParent.login' class='button login'>login</a>
     </header>
-    <div class='env-hero'>
-        <p class='temp'>86<span>&#8457;</span></p>
-        <img class='chicken-1' src='images/chickenpeck.gif' alt='chicken gif'>
-        <img class='chicken-2' src='images/chickenpeck.gif' alt='chicken gif'>
-        <img class='chicken-3' src='images/chickenpeck.gif' alt='chicken gif'>
-        <img class='chicken-4' src='images/chickenpeck.gif' alt='chicken gif'>
-        <img class='chicken-5' src='images/chickenpeck.gif' alt='chicken gif'>
-        <img class='chicken-6' src='images/chickenpeck.gif' alt='chicken gif'>
-        <img class='chicken-7' src='images/chickenpeck.gif' alt='chicken gif'>
-        <img class='chicken-8' src='images/chickenpeck.gif' alt='chicken gif'>
-        <img class='chicken-9' src='images/chickenpeck.gif' alt='chicken gif'>
-    </div>
-    <!-- <ui-view></ui-view> -->
-    <!-- <div class="admin" ng-controller="AdminCtrl as admin">
 
-      <form novalidate name="update-info" id="update-info">
-        New User Name: <input type="text" ng-model="user.name" /><br />
-        New User Password: <input type="password" ng-model="user.password" /><br />
-        Confirm New User Password: <input type="password" ng-model="user.password-confirm" /><br />
-        <button type="submit" ng-click="update(user)">Save<button/>
-      </form>
-  <!-- <pre>user = {{user | json}}</pre>
-  <pre>master = {{master | json}}</pre> -->
-  <!-- </div> -->
-<!-- 
-    <div class="eggs-show-container" ng-init="inventory.getEggs">
-      <div class="current">Current Eggs Available:
-        <div>{{eggTotal[0].total}}</div>
+    <div class='env-hero night' ng-controller='WeatherController as weather'>
+        <div class='weather'>
+            <p class='temp'>86<span>&#8457;</span></p>
+            <img class='chicken-1' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-2' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-3' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-4' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-5' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-6' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-7' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-8' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-9' src='images/chickenpeck.gif' alt='chicken gif'>
+        </div>
     </div>
-      <label class="enter-egg-number" for="enter-egg-number">How many eggs would you like to claim?  </label>
-      <input name="enter-egg-number" ng-model="this.number" class="enter-egg-number" type="number"/>
-      <button class="submit-eggs" ng-click="inventory.sendEggs(this.number)">Submit Order</button>
+    <ui-view></ui-view>
 
-      <button ng-click="inventory.editEggs(7)">Edit Button for Testing</button>
-      <img alt="tan-egg" src="images/tan-egg.png" class="tan-egg"/>
-    </div> -->
 
         <script src="lib/js/vendor.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>

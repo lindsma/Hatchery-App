@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 // Check for a valid size
+=======
+@charset "UTF-8";
+
+/// Checks for a valid CSS size.
+///
+/// @param {String} $value
+///
+/// @require {function} contains
+/// @require {function} is-length
+>>>>>>> master
 
 @function is-size($value) {
   @return is-length($value)

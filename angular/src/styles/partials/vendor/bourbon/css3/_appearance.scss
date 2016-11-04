@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 @mixin appearance ($value) {
+=======
+@mixin appearance($value) {
+>>>>>>> master
   @include prefixer(appearance, $value, webkit moz ms o spec);
 }

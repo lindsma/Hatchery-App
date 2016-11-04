@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 //************************************************************************//
 // Backface-visibility mixin
 //************************************************************************//
+=======
+>>>>>>> master
 @mixin backface-visibility($visibility) {
   @include prefixer(backface-visibility, $visibility, webkit spec);
 }

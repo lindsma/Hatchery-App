@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Font feature settings mixin and property default.
 // Examples: @include font-feature-settings("liga");
 //           @include font-feature-settings("lnum" false);
@@ -8,3 +9,9 @@
   @if length($settings) == 0 { $settings: none; }
   @include prefixer(font-feature-settings, $settings, webkit moz ms spec);
 }
+=======
+@mixin font-feature-settings($settings...) {
+  @if length($settings) == 0 { $settings: none; }
+  @include prefixer(font-feature-settings, $settings, webkit moz ms spec);
+}
+>>>>>>> master

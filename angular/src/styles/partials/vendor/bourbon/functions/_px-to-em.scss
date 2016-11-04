@@ -4,10 +4,17 @@
 
 @function em($pxval, $base: $em-base) {
   @if not unitless($pxval) {
+<<<<<<< HEAD
       $pxval: strip-units($pxval);
   }
   @if not unitless($base) {
       $base: strip-units($base);
+=======
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+>>>>>>> master
   }
   @return ($pxval / $base) * 1em;
 }

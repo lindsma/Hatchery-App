@@ -1,4 +1,10 @@
 @mixin hyphens($hyphenation: none) {
+<<<<<<< HEAD
 // none | manual | auto
   @include prefixer(hyphens, $hyphenation, webkit moz ms spec);
 }
+=======
+  // none | manual | auto
+  @include prefixer(hyphens, $hyphenation, webkit moz ms spec);
+}
+>>>>>>> master

@@ -10,8 +10,13 @@
   $spec: "#{$shape-size-spec} #{$pos-spec}";
 
   // Add comma
+<<<<<<< HEAD
   @if ($spec != '  ') {
     $spec: "#{$spec},"
+=======
+  @if ($spec != "  ") {
+    $spec: "#{$spec},";
+>>>>>>> master
   }
 
   @return $pre-spec $spec;

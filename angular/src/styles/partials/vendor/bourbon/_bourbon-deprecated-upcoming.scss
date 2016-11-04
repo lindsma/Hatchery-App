@@ -57,8 +57,13 @@
   }
 
   &:disabled {
+<<<<<<< HEAD
     opacity: 0.5;
     cursor: not-allowed;
+=======
+    cursor: not-allowed;
+    opacity: 0.5;
+>>>>>>> master
   }
 
   @warn "The button mixin is deprecated and will be removed in the next major version release";
@@ -145,9 +150,16 @@
       $stop-gradient-hover: grayscale($stop-gradient-hover);
     }
 
+<<<<<<< HEAD
     box-shadow: inset 0 1px 0 0 $inset-shadow-hover;
     cursor: pointer;
     @include linear-gradient ($base-color-hover, $stop-gradient-hover);
+=======
+    @include linear-gradient ($base-color-hover, $stop-gradient-hover);
+
+    box-shadow: inset 0 1px 0 0 $inset-shadow-hover;
+    cursor: pointer;
+>>>>>>> master
   }
 
   &:active:not(:disabled),
@@ -191,6 +203,11 @@
     $third-stop:    grayscale($third-stop);
   }
 
+<<<<<<< HEAD
+=======
+  @include linear-gradient(top, $base-color 0%, $second-stop 50%, $third-stop 50%, $fourth-stop 100%);
+
+>>>>>>> master
   border: 1px solid $border;
   border-bottom: 1px solid $border-bottom;
   border-radius: 5px;
@@ -199,7 +216,10 @@
   display: inline-block;
   font-size: $textsize;
   font-weight: bold;
+<<<<<<< HEAD
   @include linear-gradient(top, $base-color 0%, $second-stop 50%, $third-stop 50%, $fourth-stop 100%);
+=======
+>>>>>>> master
   padding: $padding;
   text-align: center;
   text-decoration: none;
@@ -218,11 +238,18 @@
       $fourth-stop-hover: grayscale($fourth-stop-hover);
     }
 
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> master
     @include linear-gradient(top, $first-stop-hover  0%,
                                   $second-stop-hover 50%,
                                   $third-stop-hover  50%,
                                   $fourth-stop-hover 100%);
+<<<<<<< HEAD
+=======
+    cursor: pointer;
+>>>>>>> master
   }
 
   &:active:not(:disabled),
@@ -296,13 +323,23 @@
       $text-shadow-hover:   grayscale($text-shadow-hover);
     }
 
+<<<<<<< HEAD
+=======
+    @include linear-gradient ($base-color-hover, $stop-gradient-hover);
+
+    background-clip: padding-box;
+>>>>>>> master
     border: 1px solid $border-top;
     border-color: $border-top $border-sides $border-bottom;
     box-shadow: inset 0 1px 0 0 $inset-shadow-hover;
     cursor: pointer;
+<<<<<<< HEAD
     @include linear-gradient ($base-color-hover, $stop-gradient-hover);
     text-shadow: 0 -1px 1px $text-shadow-hover;
     background-clip: padding-box;
+=======
+    text-shadow: 0 -1px 1px $text-shadow-hover;
+>>>>>>> master
   }
 
   &:active:not(:disabled),
@@ -339,7 +376,11 @@
 
   background-color: $base-color;
   border-radius: 3px;
+<<<<<<< HEAD
   border: none;
+=======
+  border: 0;
+>>>>>>> master
   color: $color;
   display: inline-block;
   font-size: $textsize;
@@ -400,3 +441,12 @@
 
   @warn "The golden-ratio function is deprecated and will be removed in the next major version release. Please use the modular-scale function, instead.";
 }
+<<<<<<< HEAD
+=======
+
+@mixin box-sizing($box) {
+  @include prefixer(box-sizing, $box, webkit moz spec);
+
+  @warn "The box-sizing mixin is deprecated and will be removed in the next major version release. This property can now be used un-prefixed.";
+}
+>>>>>>> master

@@ -5,7 +5,11 @@
   $end: str-index($image, ",");
   $first-val: str-slice($image, $start + 1, $end - 1);
 
+<<<<<<< HEAD
   $prefix: str-slice($image, 0, $start);
+=======
+  $prefix: str-slice($image, 1, $start);
+>>>>>>> master
   $suffix: str-slice($image, $end, str-length($image));
 
   $is-spec-syntax: str-index($first-val, "at");
@@ -18,7 +22,11 @@
     $gradients: (
       webkit-image: -webkit- + $prefix + $pos + $suffix,
       spec-image: $image
+<<<<<<< HEAD
     )
+=======
+    );
+>>>>>>> master
   }
 
   @else if $is-spec-syntax == 1 {
@@ -27,7 +35,11 @@
     $gradients: (
       webkit-image: -webkit- + $prefix + $pos + $suffix,
       spec-image: $image
+<<<<<<< HEAD
     )
+=======
+    );
+>>>>>>> master
   }
 
   @else if str-index($image, "cover") or str-index($image, "contain") {
@@ -36,14 +48,22 @@
     $gradients: (
       webkit-image: null,
       spec-image: $image
+<<<<<<< HEAD
     )
+=======
+    );
+>>>>>>> master
   }
 
   @else {
     $gradients: (
       webkit-image: -webkit- + $image,
       spec-image: $image
+<<<<<<< HEAD
     )
+=======
+    );
+>>>>>>> master
   }
 
   @return $gradients;
