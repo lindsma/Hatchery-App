@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  # before_action :authenticate
-
   def show
   end
 
@@ -9,12 +7,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    binding.pry
-    @user = User.new(
-      username: params[:username],
-      email: params[:email],
-      password: params[:password]
-    )
+    if User.all.empty?
+      generate_user(true)
+    else
+      generate_user(false)
+    end
     if @user.save
       render 'show.json.jbuilder', status: :created, location: @user
     else
@@ -27,10 +24,12 @@ class UsersController < ApplicationController
     params.require("users").permit(:username, :email, :password)
   end
 
-  protected
-  def authenticate
-    authenticate_or_request_with_http_token do |token, options|
-      User.find_by(auth_token: token)
-    end
+  def generate_user(admin_status)
+    @user = User.new(
+      username: params[:username],
+      email: params[:email],
+      password: params[:password],
+      admin: admin_status
+    )
   end
 end
