@@ -14,7 +14,7 @@ angular.module('hatcheryApp')
   })
   /* this.submitEggs calls the service function postJSON to post an initial JSON object*/
   this.submitEggs = function(number){
-  InventoryService.sendJSON({"total": 3})
+  InventoryService.sendJSON({"total": number})
   animateEggs(number);
   // .success(function(body){
   //   console.log(body.number);
