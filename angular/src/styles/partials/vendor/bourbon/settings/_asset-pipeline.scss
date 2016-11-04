@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-=======
 @charset "UTF-8";
 
 /// A global setting to enable or disable the `$asset-pipeline` variable for all functions that accept it.
 ///
 /// @type Bool
 
->>>>>>> master
 $asset-pipeline: false !default;

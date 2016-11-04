@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-// Check for a valid length
-
-@function is-length($value) {
-  @return type-of($value) != "null" and (str-slice($value + "", 1, 4) == 'calc'
-=======
 @charset "UTF-8";
 
 /// Checks for a valid CSS length.
@@ -12,7 +6,6 @@
 
 @function is-length($value) {
   @return type-of($value) != "null" and (str-slice($value + "", 1, 4) == "calc"
->>>>>>> master
        or index(auto inherit initial 0, $value)
        or (type-of($value) == "number" and not(unitless($value))));
 }
