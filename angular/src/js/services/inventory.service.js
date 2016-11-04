@@ -20,12 +20,12 @@ angular.module('hatcheryApp')
   };
   /*this function makes an API PUT call based on number from controller function*/
   this.sendJSON = function(object){
-    return $http.post('url/create', object);
+    return $http.post('localhost:3000/create', object);
     console.log('in sendJSON: post initial object');
   }
   /*this function makes an API PUT call based on number from controller function*/
   this.editJSON = function(object){
-    return $http.put('url/edit', object);
+    return $http.put('localhost:3000/edit', object);
     console.log('in editJSON: put object');
   }
 })

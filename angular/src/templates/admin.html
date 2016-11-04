@@ -1,0 +1,11 @@
+<div class="admin" ng-controller="AdminCtrl as admin">
+
+  <form novalidate name="update-info" id="update-info">
+    New User Name: <input type="text" ng-model="user.name" /><br />
+    New User Password: <input type="password" ng-model="user.password" /><br />
+    Confirm New User Password: <input type="password" ng-model="user.password-confirm" /><br />
+    <button type="submit" ng-click="update(user)">Save<button/>
+  </form>
+<!-- <pre>user = {{user | json}}</pre>
+<pre>master = {{master | json}}</pre> -->
+3

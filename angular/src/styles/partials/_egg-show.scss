@@ -69,7 +69,7 @@ input{
   left: -138px;
   transition: all 0.2s ease-in-out;
   &.active {
-    animation: dance 2s 0 1;
+    animation: dance 2s ease;
   }
 }
 @keyframes dance {
@@ -105,22 +105,22 @@ input{
   }
   70% {
     left: 700px;
-    bottom: -10vh;
+    bottom: 0vh;
     transform: rotateZ(45deg);
   }
   80% {
     left: 800px;
-    bottom: 5vh;
+    bottom: -30vh;
     transform: rotateZ(-45deg);
   }
   90% {
     left: 900px;
-    bottom: 0vh;
+    bottom: -50vh;
     transform: rotateZ(30deg);
   }
   100% {
     left: 1100px;
-    bottom: -5vh;
+    bottom: -100vh;
     transform: rotateZ(-30deg);
   }
 
