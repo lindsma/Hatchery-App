@@ -1,8 +1,0 @@
-@mixin calc($property, $value) {
-  #{$property}: -webkit-calc(#{$value});
-<<<<<<< HEAD
-  #{$property}:         calc(#{$value});
-=======
-  #{$property}: calc(#{$value});
->>>>>>> master
-}
