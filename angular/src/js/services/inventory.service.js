@@ -17,8 +17,17 @@ angular.module('hatcheryApp')
   /*this function makes an API GET call and performs the callback function specified by the controller*/
   this.getJSON = function(callback){
     $http.get('src/mock/items.json').then(callback);
-
   };
+  /*this function makes an API PUT call based on number from controller function*/
+  this.sendJSON = function(object){
+    return $http.post('url/create', object);
+    console.log('in sendJSON: post initial object');
+  }
+  /*this function makes an API PUT call based on number from controller function*/
+  this.editJSON = function(object){
+    return $http.put('url/edit', object);
+    console.log('in editJSON: put object');
+  }
 })
 
 //   this.sendJSON(callback){

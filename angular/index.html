@@ -32,14 +32,15 @@
     </div>
     <!-- <ui-view></ui-view> -->
     <div class="eggs-show-container" ng-init="inventory.getEggs">
-      <div class="current">Current Eggs Available: {{eggTotal[0].total}}</div>
+      <div class="current">Current Eggs Available:
+        <div>{{eggTotal[0].total}}</div>
+    </div>
       <label class="enter-egg-number" for="enter-egg-number">How many eggs would you like to claim?  </label>
-      <input name="enter-egg-number" ng-model="inventory.number" class="enter-egg-number" type="number"/>
-      <button ng-click="inventory.printArray(44)">Submit Order</button>
-      <!-- <div ng-repeat="egg in ictrl.eggClaim">
-        <span alt="egg.id">Here is where stuff goes{{egg.id}}</span>
-        <img src="{{egg.image}}" class="egg-pic"/>
-      </div> -->
+      <input name="enter-egg-number" ng-model="this.number" class="enter-egg-number" type="number"/>
+      <button class="submit-eggs" ng-click="inventory.submitEggs(this.number)">Submit Order</button>
+
+      <button ng-click="inventory.editEggs(7)">Edit Button for Testing</button>
+      <img alt="tan-egg" src="images/tan-egg.png" class="tan-egg"/>
     </div>
 
         <script src="lib/js/vendor.min.js"></script>
