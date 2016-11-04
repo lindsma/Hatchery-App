@@ -18,4 +18,8 @@ angular.module('hatcheryApp')
   }
 }
 
+function openEditAdmin(){
+  $('#update-info-form').removeClass('ng-hide');
+  console.log('in openEditAdmin');
+}
 });

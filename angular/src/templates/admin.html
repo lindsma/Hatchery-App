@@ -1,10 +1,12 @@
 <div class="admin">
 
-  <form novalidate name="update-info" id="update-info">
-    New User Name: <input type="text" ng-model="this.name" /><br />
-    New User Password: <input type="password" ng-model="this.password" /><br />
-    Confirm New User Password: <input type="password" ng-model="this.password2" /><br />
-    <button type="submit" ng-click="admin.updateUser(this.name, this.password, this.password2)">Save<button/>
+  <button class="update-admin-info submit-btn" ng-click="show=!show">Edit Admin Info</button>
+
+
+  <form novalidate ng-hide="!show" name="update-info" id="update-info-form">
+    New Admin Name: <input type="text" ng-model="this.name" />
+    New Admin Password: <input type="password" ng-model="this.password" />
+    Confirm New Admin Password: <input type="password" ng-model="this.password2" />
+    <button class="submit-btn" type="submit" ng-click="admin.updateUser(this.name, this.password, this.password2)">Save</button>
   </form>
-<!-- <pre>user = {{user | json}}</pre>
-<pre>master = {{master | json}}</pre> -->
+</div>

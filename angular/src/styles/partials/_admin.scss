@@ -1,0 +1,13 @@
+// COLORS
+$brightYellow: #FF9F1C;
+$topaz: #FFBF69;
+$white: #ffffff;
+$aeroBlue: #CBF3F0;
+$maxBlueGreen: #2EC4B6; // FONTS
+$bungee: 'Bungee Hairline', cursive;
+
+.admin {
+  display: flex;
+  align-items: center;
+  background: $maxBlueGreen;
+}
