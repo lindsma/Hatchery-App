@@ -1,61 +1,69 @@
-<<<<<<< HEAD
-
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*,*:before,*:after{box-sizing:border-box}.eggs-show-container{font-family:"Bungee Hairline",cursive;font-size:1.5rem;background:#2EC4B6;display:flex;height:68vh;flex-direction:column;align-items:center;padding:1%}.eggs-show-container .current div{text-align:center;margin:1%}input{width:8%;background:#CBF3F0;color:#2EC4B6;outline-color:#FF9F1C}.enter-egg-number{display:flex;height:2vh;flex-direction:column;align-items:center;padding:1%;margin:2%;font-size:1.25rem;text-align:center}.submit-eggs{margin:1%;font-family:"Rubik",sans-serif;font-size:15px;display:block;height:45px;float:right;width:80px;border:3px solid #FF9F1C;overflow:hidden;background:#FFBF69;text-decoration:none;color:black;line-height:45px;transition:all .3s ease;text-align:center}.submit-eggs:hover{cursor:pointer;border-radius:20px}.tan-egg{height:24vh;width:auto;position:absolute;bottom:-0vh;left:-138px}.tan-egg.active{animation:dance 2s infinite}@keyframes dance{10%{left:0px;bottom:-5vh;transform:rotateZ(30deg)}20%{left:200px;bottom:0vh;transform:rotateZ(-30deg)}30%{left:300px;bottom:5vh;transform:rotateZ(15deg)}40%{left:400px;bottom:0vh;transform:rotateZ(-15deg)}50%{left:500px;bottom:-10vh;transform:rotateZ(30deg)}60%{left:600px;bottom:-5vh;transform:rotateZ(-30deg)}70%{left:700px;bottom:-10vh;transform:rotateZ(45deg)}80%{left:800px;bottom:5vh;transform:rotateZ(-45deg)}90%{left:900px;bottom:0vh;transform:rotateZ(30deg)}100%{left:1100px;bottom:-5vh;transform:rotateZ(-30deg)}}header{height:100px}header .chicken-logo{height:100px;margin-top:5px;float:left;margin-left:20px}header h1{font-family:"Bungee Hairline",cursive;font-size:60px;font-weight:900;float:left;margin:20px 0 0 20px}header .register{margin:27.5px 50px 0 0}header .login{margin:27.5px 20px 0 0}header .button{font-family:"Rubik",sans-serif;font-size:15px;display:block;height:45px;float:right;width:80px;border:3px solid #FF9F1C;overflow:hidden;background:#FFBF69;text-decoration:none;color:black;line-height:45px;transition:all .3s ease;text-align:center}header .button:hover{cursor:pointer;border-radius:20px}.env-hero{height:300px;background:#CBF3F0;position:relative;margin-bottom:50px;margin-top:20px}.env-hero .temp{position:absolute;top:5%;left:5%;color:#fff;font-size:80px;font-family:"Rubik",sans-serif;text-shadow:2px 2px #FFBF69}.env-hero .temp span{font-size:60px}.env-hero img{float:right;position:absolute}.env-hero .chicken-1{height:100px;bottom:10px;left:10%}.env-hero .chicken-2{height:150px;bottom:10px;left:50%}.env-hero .chicken-3{height:320px;bottom:10px;left:60%}.env-hero .chicken-4{height:100px;bottom:10px;left:65%}.env-hero .chicken-5{height:150px;bottom:10px;left:80%}.env-hero .chicken-6{height:150px;bottom:10px;left:40%}.env-hero .chicken-7{height:150px;bottom:10px;left:15%}.env-hero .chicken-8{height:100px;bottom:10px;left:5%}.env-hero .chicken-9{height:350px;bottom:10px;left:20%}
-/*# sourceMappingURL=main.min.css.map */
-
 /*
-Error: File to import not found or unreadable: partials/vendor/bourbon/bourbon.
-        on line 2 of src/styles/main.scss
+Error: Invalid CSS after "...tings/prefixer"": expected "{", was ";"
+        on line 15 of src/styles/partials/vendor/bourbon/_bourbon.scss
+        from line 4 of src/styles/main.scss
 
-1: /****** Vendor Imports ******\/
-2: @import 'partials/vendor/bourbon/bourbon';
-3:
-4: /********** Setup ***********\/
-5: @import 'partials/setup/variables';
-6: @import 'partials/setup/reset';
-7:
+10: // http://bourbon.io
+11: // Copyright 2011-2015 thoughtbot, inc.
+12: // MIT License
+13: 
+14: >>>>>>> master
+15: @import "settings/prefixer";
+16: @import "settings/px-to-em";
+17: @import "settings/asset-pipeline";
+18: 
+19: <<<<<<< HEAD
+20: // Custom Helpers
 
 Backtrace:
-src/styles/main.scss:2
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:391:in `run'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/Users/lindseyadams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-/Users/lindseyadams/.rbenv/versions/2.3.1/bin/sass:23:in `load'
-/Users/lindseyadams/.rbenv/versions/2.3.1/bin/sass:23:in `<main>'
+src/styles/partials/vendor/bourbon/_bourbon.scss:15
+src/styles/main.scss:4
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:391:in `run'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: partials/vendor/bourbon/bourbon.\A         on line 2 of src/styles/main.scss\A \A 1: /****** Vendor Imports ******/\A 2: @import 'partials/vendor/bourbon/bourbon';\A 3: \A 4: /********** Setup ***********/\A 5: @import 'partials/setup/variables';\A 6: @import 'partials/setup/reset';\A 7: "; }
-=======
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*,*:before,*:after{box-sizing:border-box}html,body{height:100%}header{height:100px}header .chicken-logo{height:100px;margin-top:5px;float:left;margin-left:20px}header h1{font-family:"Bungee Hairline",cursive;font-size:60px;font-weight:900;float:left;margin:20px 0 0 20px}header .register{margin:27.5px 50px 0 0}header .login{margin:27.5px 20px 0 0}header .button{font-family:"Rubik",sans-serif;font-size:15px;display:block;height:45px;float:right;width:80px;border:3px solid #FF9F1C;overflow:hidden;background:#FFBF69;text-decoration:none;color:black;line-height:45px;transition:all .3s ease;text-align:center}header .button:hover{cursor:pointer;border-radius:20px}.env-hero{height:300px;background:#CBF3F0;position:relative;margin-bottom:50px;margin-top:20px;z-index:-1}.env-hero .temp{position:absolute;top:5%;left:5%;color:#fff;font-size:80px;font-family:"Rubik",sans-serif;text-shadow:2px 2px #FFBF69}.env-hero .temp span{font-size:60px}.env-hero img{float:right;position:absolute}.env-hero .chicken-1{height:100px;bottom:10px;left:10%}.env-hero .chicken-2{height:150px;bottom:10px;left:50%}.env-hero .chicken-3{height:320px;bottom:10px;left:60%}.env-hero .chicken-4{height:100px;bottom:10px;left:65%}.env-hero .chicken-5{height:150px;bottom:10px;left:80%}.env-hero .chicken-6{height:150px;bottom:10px;left:40%}.env-hero .chicken-7{height:150px;bottom:10px;left:15%}.env-hero .chicken-8{height:100px;bottom:10px;left:5%}.env-hero .chicken-9{height:350px;bottom:10px;left:20%}.rain{height:100%;overflow:hidden;position:relative}.drop{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(13,52,58,0.6)), to(rgba(255,255,255,0.2)));background:-moz-linear-gradient(top, rgba(13,52,58,0.6) 0%, rgba(255,255,255,0.2) 100%);width:1px;height:60px;position:absolute;bottom:200px;-webkit-animation:fall .63s linear infinite;-moz-animation:fall .63s linear infinite}@-webkit-keyframes fall{to{margin-top:900px}}@-moz-keyframes fall{to{margin-top:900px}}.cloudy{position:relative}.cloud{width:200px;height:60px;background:#fff;border-radius:200px;-moz-border-radius:200px;-webkit-border-radius:200px;position:relative}.cloud:before,.cloud:after{content:'';position:absolute;background:#fff;width:100px;height:80px;position:absolute;top:-15px;left:10px;border-radius:100px;-moz-border-radius:100px;-webkit-border-radius:100px;-webkit-transform:rotate(30deg);transform:rotate(30deg);-moz-transform:rotate(30deg)}.cloud:after{width:120px;height:120px;top:-55px;left:auto;right:15px}.x1{-webkit-animation:moveclouds 25s linear infinite;-moz-animation:moveclouds 25s linear infinite;-o-animation:moveclouds 25s linear infinite}.x2{left:200px;-webkit-transform:scale(0.6);-moz-transform:scale(0.6);transform:scale(0.6);opacity:0.6;-webkit-animation:moveclouds 25s linear infinite;-moz-animation:moveclouds 25s linear infinite;-o-animation:moveclouds 25s linear infinite}.x3{left:400px;top:-100px;-webkit-transform:scale(0.8);-moz-transform:scale(0.8);transform:scale(0.8);opacity:0.8;-webkit-animation:moveclouds 24s linear infinite;-moz-animation:moveclouds 24s linear infinite;-o-animation:moveclouds 24s linear infinite}.x4{left:500px;top:-75px;-webkit-transform:scale(0.75);-moz-transform:scale(0.75);transform:scale(0.75);opacity:0.75;-webkit-animation:moveclouds 24s linear infinite;-moz-animation:moveclouds 24s linear infinite;-o-animation:moveclouds 24s linear infinite}.x5{left:700px;top:-180px;-webkit-transform:scale(0.8);-moz-transform:scale(0.8);transform:scale(0.8);opacity:0.8;-webkit-animation:moveclouds 26s linear infinite;-moz-animation:moveclouds 26s linear infinite;-o-animation:moveclouds 26s linear infinite}.x6{left:-800px;top:-200px;-webkit-transform:scale(0.8);-moz-transform:scale(0.8);transform:scale(0.8);opacity:0.8;-webkit-animation:moveclouds 26s linear infinite;-moz-animation:moveclouds 26s linear infinite;-o-animation:moveclouds 26s linear infinite}.x7{left:-1000px;top:-325px;-webkit-transform:scale(0.9);-moz-transform:scale(0.9);transform:scale(0.9);opacity:0.9;-webkit-animation:moveclouds 30s linear infinite;-moz-animation:moveclouds 30s linear infinite;-o-animation:moveclouds 30s linear infinite}@-webkit-keyframes moveclouds{0%{margin-left:1000px}100%{margin-left:-1000px}}@-moz-keyframes moveclouds{0%{margin-left:1000px}100%{margin-left:-1000px}}@-o-keyframes moveclouds{0%{margin-left:1000px}100%{margin-left:-1000px}}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.env-hero.night{overflow:hidden;background-color:#111}.space{position:absolute;width:400vw;height:400vh;top:50%;left:50%;margin-top:-200vh;margin-left:-200vw;animation:spin 240s linear infinite;background-size:240px;backface-visibility:visible;background-image:url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==)}.modal{height:200px;background:#fff;width:300px;margin:0 auto;border:5px solid #FF9F1C;border-radius:5px;-webkit-box-shadow:0 8px 6px -6px black;-moz-box-shadow:0 8px 6px -6px black;box-shadow:0 8px 6px -6px black}.modal .modal-content{font-family:"Rubik",sans-serif;margin:0 10px;padding:10px 0;height:100%}
-/*# sourceMappingURL=main.min.css.map */
->>>>>>> master
+  content: "Error: Invalid CSS after \"...tings/prefixer\"\": expected \"{\", was \";\"\A         on line 15 of src/styles/partials/vendor/bourbon/_bourbon.scss\A         from line 4 of src/styles/main.scss\A \A 10: // http://bourbon.io\A 11: // Copyright 2011-2015 thoughtbot, inc.\A 12: // MIT License\A 13: \A 14: >>>>>>> master\A 15: @import \"settings/prefixer\";\A 16: @import \"settings/px-to-em\";\A 17: @import \"settings/asset-pipeline\";\A 18: \A 19: <<<<<<< HEAD\A 20: // Custom Helpers"; }
