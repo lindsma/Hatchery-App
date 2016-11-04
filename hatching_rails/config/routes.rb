@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :users
+
+  get '/user'  => 'users#new'
+
+  post '/user'  => 'users#create'
+
+  post '/create' => 'eggs#create'
+
+  get '/show' => 'eggs#show'
+
+  put '/edit' => 'eggs#update'
 end
