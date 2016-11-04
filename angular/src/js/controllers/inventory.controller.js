@@ -38,15 +38,11 @@ angular.module('hatcheryApp')
         clearInterval(theInterval);
         $('.tan-egg').removeClass('active');
       } else {
-        printEgg();
         count--;
       }
 
     },1500);
 
-  }
-  function printEgg() {
-    console.log("Egg");
   }
 
 });
