@@ -1,9 +1,8 @@
 .modal {
-  height: 200px;
   background: $white;
-  width: 300px;
+  width: 40%;
   margin: 0 auto;
-  border: 5px solid $brightYellow;
+  border: 5px solid $topaz;
   border-radius: 5px;
   -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
@@ -11,9 +10,58 @@
 
   .modal-content {
     font-family: $rubik;
-    margin: 0 10px;
-    padding: 10px 0;
     height: 100%;
+
+    img {
+      height: 40px;
+    }
+
+    h3 {
+      display: inline;
+    }
+
+    .close {
+      float: right;
+      border-radius: 50%;
+      background: $brightYellow;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .submit {
+      width: 80%;
+      background: $brightYellow;
+      border: none;
+      height: 50px;
+      font-size: 30px;
+      margin: 30px 0 10px 50%;
+      border-radius: 5px;
+      transform: translateX(-50%);
+    }
+
+    input {
+      width: 80%;
+      line-height: 45px;
+      font-size: 26px;
+      text-indent: 20px;
+      margin-left: 20px;
+    }
+
+    li {
+      margin: 15px auto 0 auto;
+      height: 50px;
+      width: 70%;
+    }
+
+    .header {
+      height: 40px;
+      background: $brightYellow;
+      color: $white;
+      margin: 0;
+    }
 
   }
 }

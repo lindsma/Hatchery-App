@@ -1,19 +1,24 @@
 <!-- MODALS -->
 <div class='login modal' ng-controller='LoginController as login'>
     <div class='login modal-content'>
-        <h3>Please Login</h3>
-        <span class='close'>x</span>
+        <ul class='login-header'>
+          <li class='header'><h3>Login to Your Account</h3>
+          <span class='close'>x</span></li>
+        </ul>
         <form ng-submit='' name='loginForm'>
-            <label for='username'>Username</label>
-            <input type='text' value='username' ng-model='username'>
-            <label for='password'>Password</label>
-            <input type='password' value='password' ng-model='password'>
+        <ul class='login-list'>
+          <li><img class='user-icon' src='images/user_icon2.png'>
+          <input type='text' value='username' ng-model='username' placeholder='username'></li>
+          <li><img class='password-icon' src='images/password_icon.png'>
+          <input type='password' value='password' ng-model='password' placeholder='password'></li>
+        </ul>
+        <button class='submit' type='submit'>login</button>
         </form>
     </div>
 </div>
 
 <!-- TO ADD INTO CLOUD TEMPLATE -->
-  <!-- <div class='cloud x1'></div>
+<!-- <div class='cloud x1'></div>
 <div class='cloud x2'></div>
 <div class='cloud x3'></div>
 <div class='cloud x4'></div>
@@ -22,4 +27,3 @@
 <div class='cloud x7'></div> -->
 
 <!-- TO ADD INTO NIGHT TEMPLATE -->
-<div class='space'></div>
