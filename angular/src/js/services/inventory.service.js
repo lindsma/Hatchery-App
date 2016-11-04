@@ -1,6 +1,6 @@
 angular.module('hatcheryApp')
 
-.service('InventoryService',function(EggFactory){
+.service('InventoryService',function(EggFactory,$http){
   function addEggs(number){
     var claimedEggsArray = [];
     for(var i = 0; i < number; i++){
@@ -14,10 +14,12 @@ angular.module('hatcheryApp')
   function printEggs(array) {
     console.log('in printEggs');
   }
-  this.getNewTotal = function(callback){
+  /*this function makes an API GET call and performs the callback function specified by the controller*/
+  this.getJSON = function(callback){
     $http.get('src/mock/items.json').then(callback);
-    
+
   };
+})
 
 //   this.sendJSON(callback){
 // $http.post('/create', data, config).then(successCallback);  }

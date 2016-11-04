@@ -31,15 +31,15 @@
         <img class='chicken-9' src='images/chickenpeck.gif' alt='chicken gif'>
     </div>
     <!-- <ui-view></ui-view> -->
-    <div class="eggs-show-container" ng-controller="InventoryController as ictrl">
-      <div class="current">Current Eggs Available: {{ictrl.eggTotal.total}}</div>
+    <div class="eggs-show-container" ng-init="inventory.getEggs">
+      <div class="current">Current Eggs Available: {{eggTotal[0].total}}</div>
       <label class="enter-egg-number" for="enter-egg-number">How many eggs would you like to claim?  </label>
-      <input name="enter-egg-number" ng-model="ictrl.number" class="enter-egg-number" type="number"/>
-      <button ng-click="ictrl.printArray(ictrl.number)">Submit Order</button>
-      <div ng-repeat="egg in ictrl.eggClaim">
+      <input name="enter-egg-number" ng-model="inventory.number" class="enter-egg-number" type="number"/>
+      <button ng-click="inventory.printArray(44)">Submit Order</button>
+      <!-- <div ng-repeat="egg in ictrl.eggClaim">
         <span alt="egg.id">Here is where stuff goes{{egg.id}}</span>
         <img src="{{egg.image}}" class="egg-pic"/>
-      </div>
+      </div> -->
     </div>
 
         <script src="lib/js/vendor.min.js"></script>
@@ -47,5 +47,7 @@
         <script src="angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="angular-local-storage/dist/angular-local-storage.min.js"></script>
         <script src="lib/js/app.js"></script>
+        <script src="src/js/controllers/inventory.controller.js"></script>
+        <script src="src/js/services/inventory.service.js"></script>
 </body>
 </html>

@@ -1,14 +1,13 @@
 angular.module('hatcheryApp')
 
 .controller('InventoryController', function(InventoryService, $scope, $http) {
-  $scope.claimedEggsArray = [];
+  $scope.eggTotal = [];
   // this.printArray = function(number) {
   //   InventoryService.add(number);
   // };
-  InventoryService.getJSON(function(response){
+  this.getEggs = InventoryService.getJSON(function(response){
     $scope.eggTotal = response.data || 0;
-    console.log($scope.eggTotal);
+    console.log($scope.eggTotal[0].total);
+    return $scope.eggTotal[0].total;
   })
-
-  }
 });

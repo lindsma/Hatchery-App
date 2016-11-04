@@ -30,7 +30,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'lib/js/app.js': ['src/js/*.js'],
+                    'lib/js/app.min.js': ['src/js/**/*.js'],
                     'lib/js/vendor.js': ['src/js/vendor/*.js']
                 }
             }
