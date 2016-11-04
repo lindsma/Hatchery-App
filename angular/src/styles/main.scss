@@ -1,10 +1,18 @@
+
+
 /****** Vendor Imports ******/
 @import 'partials/vendor/bourbon/bourbon';
 
 /********** Setup ***********/
 @import 'partials/setup/variables';
 @import 'partials/setup/reset';
+@import 'partials/setup/general';
 
 /***** Site Components ******/
 @import 'partials/header';
 @import 'partials/hero';
+@import 'partials/rain';
+@import 'partials/cloudy';
+@import 'partials/wind';
+@import 'partials/night';
+@import 'partials/modals';

@@ -22,7 +22,6 @@
 
 # Front-End Ignores
 node_modules/
-bourbon
 *.css.map
 .sass-cache/
 .DS_Store
