@@ -17,10 +17,7 @@ ActiveRecord::Schema.define(version: 20161103184524) do
 
   create_table "eggs", force: :cascade do |t|
     t.integer  "total"
-<<<<<<< HEAD
-=======
     t.integer  "user_eggs"
->>>>>>> 1d2e5b92e2f5dcf447e88c10e012e7c9362520ac
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -32,10 +29,6 @@ ActiveRecord::Schema.define(version: 20161103184524) do
     t.boolean  "admin"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-<<<<<<< HEAD
-=======
-    t.string   "auth_token"
->>>>>>> 1d2e5b92e2f5dcf447e88c10e012e7c9362520ac
   end
 
 end
