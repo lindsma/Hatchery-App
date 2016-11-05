@@ -1,12 +1,12 @@
 .modal {
   background: $white;
   width: 40%;
-  margin: 0 auto;
   border: 5px solid $topaz;
   border-radius: 5px;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
+  position: fixed;
+  top: 137px;
+  left: 50%;
+  transform: translateX(-50%);
 
   .modal-content {
     font-family: $rubik;
@@ -14,32 +14,49 @@
 
     img {
       height: 40px;
+      margin-bottom: -10px;
     }
 
     h3 {
       display: inline;
+      font-size: 28px;
+      margin-left: 5%;
+      line-height: 40px;
+      letter-spacing: .1em;
     }
 
     .close {
       float: right;
-      border-radius: 50%;
-      background: $brightYellow;
       width: 20px;
-      height: 20px;
-      line-height: 20px;
-      text-align: center;
-      font-size: 18px;
+      font-size: 22px;
+      margin: 5px;
+
+      &:hover {
+        color: #333;
+      }
     }
 
     .submit {
       width: 80%;
       background: $brightYellow;
       border: none;
+      color: $white;
       height: 50px;
-      font-size: 30px;
+      font-size: 25px;
       margin: 30px 0 10px 50%;
       border-radius: 5px;
       transform: translateX(-50%);
+      letter-spacing: .1em;
+
+      &:hover {
+        border: 3px solid $brightYellow;
+        background: $topaz;
+        color: #333;
+        -webkit-box-shadow: 0 8px 6px -6px black;
+          -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+
+      }
     }
 
     input {
@@ -56,7 +73,7 @@
       width: 70%;
     }
 
-    .header {
+    .modal-header {
       height: 40px;
       background: $brightYellow;
       color: $white;

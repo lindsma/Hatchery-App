@@ -1,10 +1,10 @@
-<!-- MODALS -->
-<div class='login modal' ng-controller='LoginController as login'>
+<!-- Login MODAL -->
+<section class='login modal' ng-controller='LoginController as login'>
     <div class='login modal-content'>
-        <ul class='login-header'>
-          <li class='header'><h3>Login to Your Account</h3>
+        <div class='modal-header'>
+          <h3>Login to Your Account</h3>
           <span class='close'>x</span></li>
-        </ul>
+        </div>
         <form ng-submit='' name='loginForm'>
         <ul class='login-list'>
           <li><img class='user-icon' src='images/user_icon2.png'>
@@ -12,10 +12,10 @@
           <li><img class='password-icon' src='images/password_icon.png'>
           <input type='password' value='password' ng-model='password' placeholder='password'></li>
         </ul>
-        <button class='submit' type='submit'>login</button>
+        <button class='submit' type='submit'>Login</button>
         </form>
     </div>
-</div>
+</section>
 
 <!-- TO ADD INTO CLOUD TEMPLATE -->
 <!-- <div class='cloud x1'></div>
@@ -25,5 +25,3 @@
 <div class='cloud x5'></div>
 <div class='cloud x6'></div>
 <div class='cloud x7'></div> -->
-
-<!-- TO ADD INTO NIGHT TEMPLATE -->
