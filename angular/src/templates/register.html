@@ -1,14 +1,22 @@
-<div class='register modal' ng-controller='RegisterController as register'>
-  <div class='register modal-content'>
-    <h3>Please Register</h3>
-    <span class='close'>x</span>
-    <form ng-submit='' name='registerForm'>
-      <label>Email</label>
-      <input type='email' ng-mode='email'>
-      <label>Username</label>
-      <input type='text' value='username' ng-model='username'>
-      <label>Password</label>
-      <input type='password' value='password' ng-model='password'>
-    </form>
-  </div>
-</div>
+<!-- Register MODAL -->
+<section class='register modal' ng-controller='RegisterController as register'>
+    <div class='register modal-content'>
+        <div class='modal-header'>
+          <h3>Create an Account</h3>
+          <span class='close'>x</span></li>
+        </div>
+        <form ng-submit='' name='registerForm'>
+        <ul class='register-list'>
+          <li><img class='user-icon' src='images/user_icon2.png' alt='user icon'>
+          <input type='text' value='username' ng-model='username' placeholder='username'></li>
+          <li><img class='email-icon' src='images/email_icon.png' alt='email icon'>
+          <input type='email' value='email' ng-model='email' placeholder='email address'></li>
+          <li><img class='password-icon' src='images/password_icon.png' alt='password icon'>
+          <input type='password' value='password' ng-model='password' placeholder='password'></li>
+          <li><img class='confirm-icon' src='images/confirm_icon.png' alt='confirm password icon'>
+          <input type='password' value='password' ng-model='password' placeholder='confirm password'></li>
+        </ul>
+        <button class='submit' type='submit'>Login</button>
+        </form>
+    </div>
+</section>
