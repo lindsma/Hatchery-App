@@ -7,6 +7,15 @@ angular.module('hatcheryApp')
     "password": null
 
   };
+  $scope.currentEggs = {
+    "total": 30
+  };
+
+  this.addEggs = function(number){
+    $scope.currentEggs.total = number;
+    console.log($scope.currentEggs.total);
+    $('#update-egg-inventory-form').removeClass('ng-hide').removeClass('closed');
+  }
 
   this.updateUser = function(name,password,password2){
     if(password === password2){

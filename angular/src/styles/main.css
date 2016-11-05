@@ -456,13 +456,14 @@ header {
     font-family: "Rubik", sans-serif;
     margin: 1%;
     transform: translate(26%);
-    border: 2px solid #FF9F1C; }
+    border: 4px solid #FF9F1C; }
     .admin #update-info-form input {
-      width: 98%;
+      width: 94%;
       line-height: 3rem;
-      margin: 1%;
+      margin: 1vh 2vw;
       font-size: 1.25rem;
-      text-align: center; }
+      text-align: center;
+      outline-style: solid; }
       .admin #update-info-form input:focus {
         outline-color: #2EC4B6; }
     .admin #update-info-form button {

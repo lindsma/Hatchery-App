@@ -1,7 +1,13 @@
 <div class="admin" ng-cloak>
 
-  <button class="update-admin-info closed submit-btn" ng-click="show=!show; closed=!closed">Edit Admin Info</button>
+  <button class="update-admin-info closed submit-btn" ng-click="show=!show; closed=!closed; showb=!showb">Edit Admin Info</button>
+  <button ng-hide="showb" class="update-egg-inventory closed2 showb submit-btn" ng-click="show2=!show2; closed2=!closed2">Add Eggs</button>
 
+
+  <form novalidate ng-hide="!show2" name="update-egg-inventory" id="update-egg-inventory-form">
+    <input type="number" ng-model="this.number" placeholder={{currentEggs}}/>
+    <button class="submit-btn" type="submit" ng-click="admin.addEggs(number)">Submit</button>
+  </form>
 
   <form novalidate ng-hide="!show" name="update-info" id="update-info-form">
     <input type="text" ng-model="this.name" placeholder="Enter New User Name"/>

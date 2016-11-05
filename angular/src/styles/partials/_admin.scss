@@ -21,13 +21,14 @@ $bungee: 'Bungee Hairline', cursive;
     font-family: "Rubik", sans-serif;
     margin: 1%;
     transform: translate(26%);
-    border: 2px solid $brightYellow;
+    border: 4px solid $brightYellow;
       input {
-        width: 98%;
+        width: 94%;
         line-height: 3rem;
-        margin: 1%;
+        margin: 1vh 2vw;
         font-size: 1.25rem;
         text-align: center;
+        outline-style: solid;
         &:focus {
           outline-color: $maxBlueGreen;
         }
