@@ -442,13 +442,35 @@ header {
     height: 100%; }
 
 .admin {
+  font-family: "Bungee Hairline", cursive;
   display: flex;
   align-items: center;
   background: #FFBF69;
   position: absolute;
   top: 54%;
-  left: 3%; }
-  .admin #update-info-form {
+  left: 3%;
+  width: 80%; }
+  .admin #welcome {
+    position: absolute;
+    top: 13vh;
+    right: 5%;
+    width: 59%;
+    background: #FFBF69;
+    height: 23vh;
+    font-size: 1.6rem;
+    color: black;
+    text-align: center;
+    padding: 2% 1% 1% 1%;
+    border: 4px solid #FF9F1C; }
+  .admin #update-egg-inventory-form #update-egg-inventory-input {
+    width: 30%;
+    transform: translate(121%);
+    margin: 6% auto; }
+  .admin #update-egg-inventory-form #update-egg-inventory-button {
+    margin: 9% 40%;
+    padding: 0; }
+  .admin #update-info-form,
+  .admin #update-egg-inventory-form {
     background: #ffffff;
     height: 40vh;
     width: 67%;
@@ -457,19 +479,26 @@ header {
     margin: 1%;
     transform: translate(26%);
     border: 4px solid #FF9F1C; }
-    .admin #update-info-form input {
+    .admin #update-info-form input,
+    .admin #update-egg-inventory-form input {
       width: 94%;
       line-height: 3rem;
       margin: 1vh 2vw;
       font-size: 1.25rem;
       text-align: center;
       outline-style: solid; }
-      .admin #update-info-form input:focus {
+      .admin #update-info-form input:focus,
+      .admin #update-egg-inventory-form input:focus {
         outline-color: #2EC4B6; }
-    .admin #update-info-form button {
-      margin: 3% 42%; }
+    .admin #update-info-form button,
+    .admin #update-egg-inventory-form button {
+      margin: 3% 42%;
+      padding: 0; }
   .admin .closed {
     position: absolute;
-    top: 9vh; }
+    top: 22vh; }
+  .admin .closed2 {
+    position: absolute;
+    top: 11vh; }
 
 /*# sourceMappingURL=main.css.map */
