@@ -11,34 +11,21 @@ angular.module('hatcheryApp')
     }
     return claimedEggsArray;
   }
-  function printEggs(array) {
-    console.log('in printEggs');
-  }
   /*this function makes an API GET call and performs the callback function specified by the controller*/
   this.getJSON = function(callback){
-    $http.get('https://glacial-anchorage-56426.herokuapp.com/show').then(callback);
+    // $http.get('https://glacial-anchorage-56426.herokuapp.com/show').then(callback);
   };
   /*this function makes an API PUT call based on number from controller function*/
   this.sendJSON = function(object){
-    return $http.post('https://glacial-anchorage-56426.herokuapp.com/create', object);
+    // return $http.post('https://glacial-anchorage-56426.herokuapp.com/create', object);
     console.log('in sendJSON: post initial object');
   }
   /*this function makes an API PUT call based on number from controller function*/
   this.editJSON = function(object){
-    return $http.put('https://glacial-anchorage-56426.herokuapp.com/edit', object);
+    // return $http.put('https://glacial-anchorage-56426.herokuapp.com/edit', object);
     console.log('in editJSON: put object');
   }
 })
-
-//   this.sendJSON(callback){
-// $http.post('/create', data, config).then(successCallback);  }
-//   return {
-//     add: addEggs
-//     print: printEggs
-//   }
-// })
-// //use set Timeout to print the array.
-
 
 .factory('EggFactory', function(){
 return function Egg(){

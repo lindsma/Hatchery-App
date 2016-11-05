@@ -8,7 +8,7 @@ angular.module('hatcheryApp')
 
   };
   $scope.currentEggs = {
-    "total": 30
+    "total": 44
   };
 
   this.addEggs = function(number){
