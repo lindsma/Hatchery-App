@@ -1,0 +1,76 @@
+// COLORS
+$brightYellow: #FF9F1C;
+$topaz: #FFBF69;
+$white: #ffffff;
+$aeroBlue: #CBF3F0;
+$maxBlueGreen: #2EC4B6; // FONTS
+$bungee: 'Bungee Hairline', cursive;
+
+.admin {
+  font-family: $bungee;
+  display: flex;
+  align-items: center;
+  background: $topaz;
+  position: absolute;
+  top: 54%;
+  left: 3%;
+  width: 80%;
+  #welcome {
+    position: absolute;
+    top: 13vh;
+    right: 5%;
+    width: 59%;
+    background: $topaz;
+    height: 23vh;
+    font-size: 1.6rem;
+    color: black;
+    text-align: center;
+    padding: 2% 1% 1% 1%;
+    border: 4px solid $brightYellow;
+  }
+  #update-egg-inventory-form {
+    #update-egg-inventory-input {
+      width: 30%;
+      transform: translate(121%);
+      margin: 6% auto;
+    }
+    #update-egg-inventory-button {
+      margin: 9% 40%;
+      padding: 0;
+    }
+  }
+  #update-info-form,
+  #update-egg-inventory-form {
+    background: $white;
+    height: 40vh;
+    width: 67%;
+    border: 2px solid $maxBlueGreen;
+    font-family: "Rubik", sans-serif;
+    margin: 1%;
+    transform: translate(26%);
+    border: 4px solid $brightYellow;
+      input {
+        width: 94%;
+        line-height: 3rem;
+        margin: 1vh 2vw;
+        font-size: 1.25rem;
+        text-align: center;
+        outline-style: solid;
+        &:focus {
+          outline-color: $maxBlueGreen;
+        }
+      }
+      button {
+        margin: 3% 42%;
+        padding: 0;
+      }
+  }
+  .closed {
+    position: absolute;
+    top: 22vh;
+  }
+  .closed2 {
+    position: absolute;
+    top: 11vh;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="admin" ng-cloak>
+
+<div id="welcome" class="show3" ng-hide="show3">Welcome, Admin! From this screen you can add eggs to your inventory or update your username and password.
+</div>
+  <button ng-hide="showb"class="update-admin-info closed submit-btn" ng-click="show3=!show3; show=!show; closed=!closed; showb2=!showb2">edit admin</button>
+  <button ng-hide="showb2" class="update-egg-inventory closed2 showb submit-btn" ng-click="show3=!show3; show2=!show2; showb=!showb; closed2=!closed2">add eggs</button>
+
+  <form novalidate ng-hide="!show2" name="update-egg-inventory" id="update-egg-inventory-form">
+    <input id="update-egg-inventory-input" type="number" ng-model="this.number" placeholder={{currentEggs}}/>
+    <button id="update-egg-inventory-button" class="submit-btn" type="submit" ng-click="admin.addEggs(number)">submit</button>
+  </form>
+
+  <form novalidate ng-hide="!show" name="update-info" id="update-info-form">
+    <input type="text" ng-model="this.name" placeholder="Enter New User Name"/>
+    <input type="password" ng-model="this.password" placeholder="Enter New Password"/>
+    <input type="password" ng-model="this.password2" placeholder="Confirm Your Password"/>
+    <button class="submit-btn" type="submit" ng-click="admin.updateUser(this.name, this.password, this.password2)">save</button>
+  </form>
+</div>

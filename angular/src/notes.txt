@@ -1,0 +1,14 @@
+user creates Inventory
+routes.rb
+post '/create' 
+get '/show' what is in database/current inventory 'inventory is hash's name
+put '/edit' pass 'input' to Dan
+[{1}]
+
+
+hash called inventory to display on screen
+
+user or admin edit will use hash edited
+
+type in number... send dan object input
+dan will send it back to me.

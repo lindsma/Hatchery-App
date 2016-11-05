@@ -1,0 +1,131 @@
+// COLORS
+$brightYellow: #FF9F1C;
+$topaz: #FFBF69;
+$white: #ffffff;
+$aeroBlue: #CBF3F0;
+$maxBlueGreen: #2EC4B6;
+// FONTS
+$bungee: 'Bungee Hairline', cursive;
+
+.eggs-show-container {
+    font-family: $bungee;
+    font-size: 1.5rem;
+    background: $maxBlueGreen;
+    display: flex;
+    height: 68vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    .current {
+      div {
+        text-align: center;
+        margin: 1%;
+      }
+    }
+}
+
+input{
+  width: 8%;
+  background: $aeroBlue;
+  color: $maxBlueGreen;
+  outline-color: $brightYellow;
+}
+
+.enter-egg-number {
+    display: flex;
+    height: 2vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    margin: 2%;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.submit-btn
+{
+  margin: 1%;
+  font-family: "Rubik",sans-serif;
+  font-size: 15px;
+  display: block;
+  height: 45px;
+  float: right;
+  width: 80px;
+  border: 3px solid $brightYellow;
+  overflow: hidden;
+  background: $topaz;
+  text-decoration: none;
+  color: black;
+  line-height: 45px;
+  transition: all .3s ease;
+  text-align: center;
+  &:hover
+  {
+    cursor: pointer;
+    border-radius: 20px;
+    outline: $maxBlueGreen;
+  }
+}
+.tan-egg {
+  height: 24vh;
+  width: auto;
+  position: absolute;
+  bottom: -0vh;
+  left: -138px;
+  transition: all 0.2s ease-in-out;
+  &.active {
+    animation: dance 2s ease;
+  }
+}
+@keyframes dance {
+  10% {
+    left: 0px;
+    bottom: -5vh;
+    transform: rotateZ(30deg);
+  }
+  20% {
+    left: 200px;
+    bottom: 0vh;
+    transform: rotateZ(-30deg);
+  }
+  30% {
+    left: 300px;
+    bottom: 5vh;
+    transform: rotateZ(15deg);
+  }
+  40% {
+    left: 400px;
+    bottom: 0vh;
+    transform: rotateZ(-15deg);
+  }
+  50% {
+    left: 500px;
+    bottom: -10vh;
+    transform: rotateZ(30deg);
+  }
+  60% {
+    left: 600px;
+    bottom: -5vh;
+    transform: rotateZ(-30deg);
+  }
+  70% {
+    left: 700px;
+    bottom: 0vh;
+    transform: rotateZ(45deg);
+  }
+  80% {
+    left: 800px;
+    bottom: -30vh;
+    transform: rotateZ(-45deg);
+  }
+  90% {
+    left: 900px;
+    bottom: -50vh;
+    transform: rotateZ(30deg);
+  }
+  100% {
+    left: 1100px;
+    bottom: -100vh;
+    transform: rotateZ(-30deg);
+  }
+
+}
