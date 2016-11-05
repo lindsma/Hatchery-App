@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20161103184524) do
     t.boolean  "admin"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+
   end
 
 end

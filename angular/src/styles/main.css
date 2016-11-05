@@ -54,6 +54,110 @@ html, body {
   height: 100%; }
 
 /***** Site Components ******/
+<<<<<<< HEAD
+=======
+.eggs-show-container {
+  font-family: "Bungee Hairline", cursive;
+  font-size: 1.5rem;
+  background: #2EC4B6;
+  display: flex;
+  height: 68vh;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%; }
+  .eggs-show-container .current div {
+    text-align: center;
+    margin: 1%; }
+
+input {
+  width: 8%;
+  background: #CBF3F0;
+  color: #2EC4B6;
+  outline-color: #FF9F1C; }
+
+.enter-egg-number {
+  display: flex;
+  height: 2vh;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  margin: 2%;
+  font-size: 1.25rem;
+  text-align: center; }
+
+.submit-btn {
+  margin: 1%;
+  font-family: "Rubik",sans-serif;
+  font-size: 15px;
+  display: block;
+  height: 45px;
+  float: right;
+  width: 80px;
+  border: 3px solid #FF9F1C;
+  overflow: hidden;
+  background: #FFBF69;
+  text-decoration: none;
+  color: black;
+  line-height: 45px;
+  transition: all .3s ease;
+  text-align: center; }
+  .submit-btn:hover {
+    cursor: pointer;
+    border-radius: 20px;
+    outline: #2EC4B6; }
+
+.tan-egg {
+  height: 24vh;
+  width: auto;
+  position: absolute;
+  bottom: -0vh;
+  left: -138px;
+  transition: all 0.2s ease-in-out; }
+  .tan-egg.active {
+    animation: dance 2s ease; }
+
+@keyframes dance {
+  10% {
+    left: 0px;
+    bottom: -5vh;
+    transform: rotateZ(30deg); }
+  20% {
+    left: 200px;
+    bottom: 0vh;
+    transform: rotateZ(-30deg); }
+  30% {
+    left: 300px;
+    bottom: 5vh;
+    transform: rotateZ(15deg); }
+  40% {
+    left: 400px;
+    bottom: 0vh;
+    transform: rotateZ(-15deg); }
+  50% {
+    left: 500px;
+    bottom: -10vh;
+    transform: rotateZ(30deg); }
+  60% {
+    left: 600px;
+    bottom: -5vh;
+    transform: rotateZ(-30deg); }
+  70% {
+    left: 700px;
+    bottom: 0vh;
+    transform: rotateZ(45deg); }
+  80% {
+    left: 800px;
+    bottom: -30vh;
+    transform: rotateZ(-45deg); }
+  90% {
+    left: 900px;
+    bottom: -50vh;
+    transform: rotateZ(30deg); }
+  100% {
+    left: 1100px;
+    bottom: -100vh;
+    transform: rotateZ(-30deg); } }
+
 header {
   height: 100px; }
   header .chicken-logo {
@@ -96,8 +200,10 @@ header {
   position: relative;
   margin-bottom: 50px;
   margin-top: 20px;
+
   z-index: -1;
   overflow: hidden; }
+
   .env-hero .temp {
     position: absolute;
     top: 5%;
@@ -326,6 +432,7 @@ header {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==); }
 
 .modal {
+
   background: #ffffff;
   width: 40%;
   border: 5px solid #FFBF69;
@@ -386,5 +493,81 @@ header {
       background: #FF9F1C;
       color: #ffffff;
       margin: 0; }
+
+  height: 200px;
+  background: #ffffff;
+  width: 300px;
+  margin: 0 auto;
+  border: 5px solid #FF9F1C;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black; }
+  .modal .modal-content {
+    font-family: "Rubik", sans-serif;
+    margin: 0 10px;
+    padding: 10px 0;
+    height: 100%; }
+
+.admin {
+  font-family: "Bungee Hairline", cursive;
+  display: flex;
+  align-items: center;
+  background: #FFBF69;
+  position: absolute;
+  top: 54%;
+  left: 3%;
+  width: 80%; }
+  .admin #welcome {
+    position: absolute;
+    top: 13vh;
+    right: 5%;
+    width: 59%;
+    background: #FFBF69;
+    height: 23vh;
+    font-size: 1.6rem;
+    color: black;
+    text-align: center;
+    padding: 2% 1% 1% 1%;
+    border: 4px solid #FF9F1C; }
+  .admin #update-egg-inventory-form #update-egg-inventory-input {
+    width: 30%;
+    transform: translate(121%);
+    margin: 6% auto; }
+  .admin #update-egg-inventory-form #update-egg-inventory-button {
+    margin: 9% 40%;
+    padding: 0; }
+  .admin #update-info-form,
+  .admin #update-egg-inventory-form {
+    background: #ffffff;
+    height: 40vh;
+    width: 67%;
+    border: 2px solid #2EC4B6;
+    font-family: "Rubik", sans-serif;
+    margin: 1%;
+    transform: translate(26%);
+    border: 4px solid #FF9F1C; }
+    .admin #update-info-form input,
+    .admin #update-egg-inventory-form input {
+      width: 94%;
+      line-height: 3rem;
+      margin: 1vh 2vw;
+      font-size: 1.25rem;
+      text-align: center;
+      outline-style: solid; }
+      .admin #update-info-form input:focus,
+      .admin #update-egg-inventory-form input:focus {
+        outline-color: #2EC4B6; }
+    .admin #update-info-form button,
+    .admin #update-egg-inventory-form button {
+      margin: 3% 42%;
+      padding: 0; }
+  .admin .closed {
+    position: absolute;
+    top: 22vh; }
+  .admin .closed2 {
+    position: absolute;
+    top: 11vh; }
+
 
 /*# sourceMappingURL=main.css.map */
