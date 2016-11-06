@@ -23,15 +23,21 @@ $bungee: 'Bungee Hairline', cursive;
     top: -10vh;
     border: 2px solid $brightYellow;
     text-align: center;
-    @include mobile {
+    @include media(mobile) {
       background: red;
     }
     .current {
       margin: 2% 2%;
-      div {
-        text-align: center;
-        margin: 2%;
+      .submit-btn {
+        position: absolute;
+        top: 36vh;
+        margin: 0 auto;
+        position: absolute;
+        top: 35vh;
+        left: 40vw;
       }
+
+
     }
 }
 
@@ -42,26 +48,26 @@ input{
   outline-color: $brightYellow;
 }
 .enter-egg-number {
-    display: flex;
-    height: 2vh;
-    flex-direction: column;
-    align-items: center;
-    padding: 1%;
-    margin: 1%;
-    font-size: 1.25rem;
-    text-align: center;
-    height: 6vh;
-    position: absolute;
-    top: 17vh;
-}
+  display: flex;
+  height: 2vh;
+  flex-direction: column;
+  padding: 1%;
+  margin: 1% 6%;
+  font-size: 1.25rem;
+  text-align: center;
+  height: 6vh;
+  position: absolute;
+  top: 17vh;
+  left: 4%;}
 .enter-egg-number-input{
   position: absolute;
   width: 20vw;
   background: #CBF3F0;
   color: #2EC4B6;
   outline-color: #FF9F1C;
-  top: 28vh;
+  top: 26vh;
   line-height: 2rem;
+  left: 44%;
 }
 .submit-btn
 {
@@ -89,8 +95,9 @@ input{
   }
 }
 .bouncing-egg{
-  position: relative;
-}
+  position: absolute;
+  top: 43vh;
+  left: 48%;}
 .tan-egg {
   height: 24vh;
   width: auto;

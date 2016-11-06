@@ -2,11 +2,12 @@
 <div ng-cloak class="eggs-show-container" ng-init="inventory.getEggs">
   <div ng-cloak class="current">Current Eggs Available:
     <div>{{currentEggs.total}}</div>
-</div class=>
+
   <label class="enter-egg-number" for="enter-egg-number">How many eggs would you like to claim? </label>
   <input name="enter-egg-number" ng-model="this.number" class="enter-egg-number-input" type="number"/>
   <button class="submit-btn" ng-click="inventory.submitEggs(this.number)">Submit Order</button>
 
   <img alt="tan-egg" src="images/tan-egg.png" class="tan-egg"/>
   <img alt="bouncing-egg" class="bouncing-egg" src='http://www.animatedimages.org/data/media/476/animated-egg-image-0014.gif'/>
+</div>
 </div>
