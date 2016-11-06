@@ -24,7 +24,7 @@ $bungee: 'Bungee Hairline', cursive;
     border: 2px solid $brightYellow;
     text-align: center;
     @include mobile {
-      background: red;
+      background: $topaz;
     }
     .current {
       margin: 2% 2%;

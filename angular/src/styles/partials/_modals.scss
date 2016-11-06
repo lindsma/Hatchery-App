@@ -59,12 +59,15 @@
       }
     }
 
-    input {
+    input.login, input.register {
       width: 80%;
       line-height: 45px;
       font-size: 26px;
       text-indent: 20px;
       margin-left: 20px;
+      background: $white;
+      border: 2px solid lightgrey;
+      color: #A9A9A9;
     }
 
     li {
