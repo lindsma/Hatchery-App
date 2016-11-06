@@ -12,38 +12,61 @@ $bungee: 'Bungee Hairline', cursive;
     font-size: 1.5rem;
     background: $maxBlueGreen;
     display: flex;
-    height: 68vh;
+    height: 50vh;
     flex-direction: column;
     align-items: center;
     padding: 1%;
+    color: white;
+    font-weight: 900;
+    position: relative;
+    padding: 4%;
+    top: -10vh;
+    border: 2px solid $brightYellow;
+    text-align: center;
+    @include mobile {
+      background: red;
+    }
     .current {
+      margin: 2% 2%;
       div {
         text-align: center;
-        margin: 1%;
+        margin: 2%;
       }
     }
 }
 
 input{
-  width: 8%;
+  width: 20vw;
   background: $aeroBlue;
   color: $maxBlueGreen;
   outline-color: $brightYellow;
 }
-
 .enter-egg-number {
     display: flex;
     height: 2vh;
     flex-direction: column;
     align-items: center;
     padding: 1%;
-    margin: 2%;
+    margin: 1%;
     font-size: 1.25rem;
     text-align: center;
+    height: 6vh;
+    position: absolute;
+    top: 17vh;
+}
+.enter-egg-number-input{
+  position: absolute;
+  width: 20vw;
+  background: #CBF3F0;
+  color: #2EC4B6;
+  outline-color: #FF9F1C;
+  top: 28vh;
+  line-height: 2rem;
 }
 .submit-btn
 {
   margin: 1%;
+  padding: 1% 0;
   font-family: "Rubik",sans-serif;
   font-size: 15px;
   display: block;
@@ -55,7 +78,7 @@ input{
   background: $topaz;
   text-decoration: none;
   color: black;
-  line-height: 45px;
+  line-height: 15px;
   transition: all .3s ease;
   text-align: center;
   &:hover
@@ -65,13 +88,16 @@ input{
     outline: $maxBlueGreen;
   }
 }
+.bouncing-egg{
+  position: relative;
+}
 .tan-egg {
   height: 24vh;
   width: auto;
   position: absolute;
   bottom: -0vh;
   left: -138px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   &.active {
     animation: dance 2s ease;
   }
@@ -79,52 +105,52 @@ input{
 @keyframes dance {
   10% {
     left: 0px;
-    bottom: -5vh;
+    bottom: 30vh;
     transform: rotateZ(30deg);
   }
   20% {
     left: 200px;
-    bottom: 0vh;
+    bottom: 20vh;
     transform: rotateZ(-30deg);
   }
   30% {
     left: 300px;
-    bottom: 5vh;
+    bottom: 36vh;
     transform: rotateZ(15deg);
   }
   40% {
     left: 400px;
-    bottom: 0vh;
+    bottom: 24vh;
     transform: rotateZ(-15deg);
   }
   50% {
     left: 500px;
-    bottom: -10vh;
+    bottom: 20vh;
     transform: rotateZ(30deg);
   }
   60% {
     left: 600px;
-    bottom: -5vh;
+    bottom: 15vh;
     transform: rotateZ(-30deg);
   }
   70% {
     left: 700px;
-    bottom: 0vh;
+    bottom: 24vh;
     transform: rotateZ(45deg);
   }
   80% {
     left: 800px;
-    bottom: -30vh;
+    bottom: 38vh;
     transform: rotateZ(-45deg);
   }
   90% {
     left: 900px;
-    bottom: -50vh;
+    bottom: 30vh;
     transform: rotateZ(30deg);
   }
   100% {
     left: 1100px;
-    bottom: -100vh;
+    bottom: 20vh;
     transform: rotateZ(-30deg);
   }
 

@@ -4,7 +4,6 @@
     var hatcheryApp = angular.module('hatcheryApp', ['ui.router', 'LocalStorageModule']);
 
     hatcheryApp.config(function($stateProvider, $urlRouterProvider) {
-
         $urlRouterProvider.otherwise('/');
 
         $stateProvider.state('hatcheryParent', {

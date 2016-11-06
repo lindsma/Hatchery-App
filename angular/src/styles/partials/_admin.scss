@@ -12,9 +12,10 @@ $bungee: 'Bungee Hairline', cursive;
   align-items: center;
   background: $topaz;
   position: absolute;
-  top: 54%;
-  left: 3%;
+  top: 56%;
+  left: 10%;
   width: 80%;
+
   #welcome {
     position: absolute;
     top: 13vh;
@@ -22,17 +23,17 @@ $bungee: 'Bungee Hairline', cursive;
     width: 59%;
     background: $topaz;
     height: 23vh;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: black;
     text-align: center;
-    padding: 2% 1% 1% 1%;
+    padding: 3% 1% 2% 1%;
     border: 4px solid $brightYellow;
   }
   #update-egg-inventory-form {
     #update-egg-inventory-input {
       width: 30%;
       transform: translate(121%);
-      margin: 6% auto;
+      margin: 4% auto;
     }
     #update-egg-inventory-button {
       margin: 9% 40%;
@@ -49,10 +50,17 @@ $bungee: 'Bungee Hairline', cursive;
     margin: 1%;
     transform: translate(26%);
     border: 4px solid $brightYellow;
+      img {
+        height: 14%;
+        position: relative;
+        top: 10px;
+        left: 6px;
+        margin: 1%;
+      }
       input {
-        width: 94%;
+        width: 75%;
         line-height: 3rem;
-        margin: 1vh 2vw;
+        margin: 0 2vw;
         font-size: 1.25rem;
         text-align: center;
         outline-style: solid;
@@ -61,7 +69,7 @@ $bungee: 'Bungee Hairline', cursive;
         }
       }
       button {
-        margin: 3% 42%;
+        margin: 4% 42%;
         padding: 0;
       }
   }
