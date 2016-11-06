@@ -9,7 +9,7 @@ $bungee: 'Bungee Hairline', cursive;
 
 .eggs-show-container {
     font-family: $bungee;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     background: $maxBlueGreen;
     display: flex;
     height: 50vh;
@@ -23,8 +23,10 @@ $bungee: 'Bungee Hairline', cursive;
     top: -10vh;
     border: 2px solid $brightYellow;
     text-align: center;
+
     @include media(mobile) {
-      background: red;
+      background: $brightYellow;
+
     }
     .current {
       margin: 2% 2%;

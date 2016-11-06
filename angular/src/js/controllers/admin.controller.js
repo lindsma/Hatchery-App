@@ -12,14 +12,10 @@ angular.module('hatcheryApp')
   };
 
   this.addEggs = function(number){
-    if (number > 0){
+      number = 
       $scope.currentEggs.total += number;
       InventoryService.sendJSONedit({"input":number});
       alert("You now have " + $scope.currentEggs.total + " eggs in your inventory!");
-
-  } else {
-    alert("Sorry. You can't un-order eggs.");
-  }
     $('#update-egg-inventory-form').removeClass('ng-hide').removeClass('closed');
   }
 

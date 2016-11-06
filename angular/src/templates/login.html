@@ -1,16 +1,16 @@
 <!-- Login MODAL -->
-<section class='login modal' ng-controller='LoginController as login'>
+<section class='login modal'>
     <div class='login modal-content'>
         <div class='modal-header'>
           <h3>Login to Your Account</h3>
           <span class='close'>x</span></li>
         </div>
-        <form ng-submit='' name='loginForm'>
+        <form name='loginForm' ng-submit='loginForm.$valid && checkLogin(user)'>
         <ul class='login-list'>
           <li><img class='user-icon' src='images/user_icon2.png'>
-          <input type='text' value='username' ng-model='username' placeholder='username'></li>
+          <input class='login' type='text' name='user' ng-model='user' placeholder='username'></li>
           <li><img class='password-icon' src='images/password_icon.png'>
-          <input type='password' value='password' ng-model='password' placeholder='password'></li>
+          <input class='login' type='password' ng-model='password' placeholder='password'></li>
         </ul>
         <button class='submit' type='submit'>Login</button>
         </form>

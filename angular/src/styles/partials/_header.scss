@@ -1,11 +1,19 @@
 header {
     height: 100px;
 
+    @include media(tablet) {
+      height: 80px;
+    }
+
     .chicken-logo {
         height: 100px;
         margin-top: 5px;
         float: left;
         margin-left: 20px;
+
+        @include media(tablet) {
+          height: 80px;
+        }
     }
 
     h1 {
@@ -14,6 +22,10 @@ header {
         font-weight: 900;
         float: left;
         margin: 20px 0 0 20px;
+
+        @include media(tablet) {
+          font-size: 40px;
+        }
     }
 
     .register {
