@@ -70,9 +70,9 @@ html, body {
   top: -10vh;
   border: 2px solid #FF9F1C;
   text-align: center; }
-  @media (min-width: 300px) and (max-width: 768px) {
+  @media only screen and (max-width: 300px) {
     .eggs-show-container {
-      background: red; } }
+      background: #FFBF69; } }
   .eggs-show-container .current {
     margin: 2% 2%; }
     .eggs-show-container .current div {
@@ -185,17 +185,26 @@ input {
     transform: rotateZ(-30deg); } }
 header {
   height: 100px; }
+  @media only screen and (max-width: 768px) {
+    header {
+      height: 80px; } }
   header .chicken-logo {
     height: 100px;
     margin-top: 5px;
     float: left;
     margin-left: 20px; }
+    @media only screen and (max-width: 768px) {
+      header .chicken-logo {
+        height: 80px; } }
   header h1 {
     font-family: "Bungee Hairline", cursive;
     font-size: 60px;
     font-weight: 900;
     float: left;
     margin: 20px 0 0 20px; }
+    @media only screen and (max-width: 768px) {
+      header h1 {
+        font-size: 40px; } }
   header .register {
     margin: 27.5px 50px 0 0; }
   header .login {
@@ -500,12 +509,15 @@ header {
         -webkit-box-shadow: 0 8px 6px -6px black;
         -moz-box-shadow: 0 8px 6px -6px black;
         box-shadow: 0 8px 6px -6px black; }
-    .modal .modal-content input {
+    .modal .modal-content input.login, .modal .modal-content input.register {
       width: 80%;
       line-height: 45px;
       font-size: 26px;
       text-indent: 20px;
-      margin-left: 20px; }
+      margin-left: 20px;
+      background: #ffffff;
+      border: 2px solid lightgrey;
+      color: #A9A9A9; }
     .modal .modal-content li {
       margin: 15px auto 0 auto;
       height: 50px;
