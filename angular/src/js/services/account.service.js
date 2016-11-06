@@ -3,17 +3,15 @@ angular.module('hatcheryApp').service('accountService', function($http, localSto
     console.log('in account service');
 
 
-    function getUser(username) {
+    function getUser(username, callback) {
       console.log(username);
       var user = username;
 
       $http({
           method: 'GET',
           url: 'http://lit-reaches-27413.herokuapp.com/login?username=' + user,
-      }).then(function successCallback(response) {
-          console.log(response);
-      }, function errorCallback(response) {
-          console.log(response);
+      }).then(callback, function errorCallback(response) {
+          // console.log(response);
       });
 
     }
