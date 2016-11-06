@@ -23,7 +23,8 @@ $bungee: 'Bungee Hairline', cursive;
     top: -10vh;
     border: 2px solid $brightYellow;
     text-align: center;
-    @include mobile {
+    
+    @include media(mobile) {
       background: $topaz;
     }
     .current {

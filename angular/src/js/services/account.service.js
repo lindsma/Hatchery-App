@@ -5,10 +5,11 @@ angular.module('hatcheryApp').service('accountService', function($http, localSto
 
     function getUser(username) {
       console.log(username);
+      var user = username;
+
       $http({
           method: 'GET',
-          url: 'http://lit-reaches-27413.herokuapp.com/login',
-          data: username
+          url: 'http://lit-reaches-27413.herokuapp.com/login?username=' + user,
       }).then(function successCallback(response) {
           console.log(response);
       }, function errorCallback(response) {

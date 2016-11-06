@@ -2,19 +2,24 @@ $tablet-width: 768px;
 $desktop-width: 1024px;
 $mobile-width: 300px;
 
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
 
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
+@mixin media($bp) {
+     @if $bp == desktop {
+        @media only screen and (max-width: $desktop-width) {
+             @content;
+        }
+    }
+
+    @if $bp == tablet {
+       @media only screen and (max-width: $tablet-width) {
+            @content;
+       }
+   }
+
+   @if $bp == mobile {
+      @media only screen and (max-width: $mobile-width) {
+           @content;
+      }
   }
-}
-@mixin mobile {
-  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}){
-    @content;
-  }
+
 }
