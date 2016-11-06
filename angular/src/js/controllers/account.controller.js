@@ -2,10 +2,10 @@ angular.module('hatcheryApp').controller('AccountController', function($scope, a
   console.log('testing');
 
     $scope.checkLogin = function(username) {
-      // $scope.loginData = {
-      //   username: username
-      // };
-      accountService.get(username);
+      $scope.loginData = {
+        username: username
+      };
+      accountService.get($scope.loginData);
 
     };
 
