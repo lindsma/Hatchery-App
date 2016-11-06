@@ -27,6 +27,7 @@ header {
 
         @include media(mobileLarge) {
           height: 65px;
+          margin-top: 10px;
         }
     }
 
@@ -44,6 +45,7 @@ header {
         @include media(mobileLarge) {
           font-size: 30px;
           margin-left: 10px;
+          margin-top: 25px;
         }
     }
 

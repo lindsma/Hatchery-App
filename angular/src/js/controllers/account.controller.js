@@ -5,6 +5,7 @@ angular.module('hatcheryApp').controller('AccountController', function($scope, a
     $scope.checkLogin = function(username) {
       accountService.get(username, function(response) {
         $scope.loggedIn = response.data;
+        console.log($scope.loggedIn);
       });
     };
 

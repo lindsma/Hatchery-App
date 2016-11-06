@@ -7,7 +7,24 @@
   top: 137px;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 1s ease;
 
+  @include media(desktopMid) {
+    width: 50%;
+  }
+  @include media(desktop) {
+    width: 60%;
+  }
+  @include media(tablet) {
+    width: 75%;
+  }
+  @include media(tabletSmall) {
+    width: 85%;
+  }
+
+  @include media(mobileLarge) {
+    width: 80%;
+  }
   .modal-content {
     font-family: $rubik;
     height: 100%;
@@ -15,6 +32,11 @@
     img {
       height: 40px;
       margin-bottom: -10px;
+
+      @include media(mobile) {
+        height: 30px;
+        margin-bottom: -5px;
+      }
     }
 
     h3 {
@@ -23,6 +45,10 @@
       margin-left: 5%;
       line-height: 40px;
       letter-spacing: .1em;
+
+      @include media(mobileLarge) {
+        font-size: 18px;
+      }
     }
 
     .close {
@@ -48,6 +74,10 @@
       transform: translateX(-50%);
       letter-spacing: .1em;
 
+      @include media(mobile) {
+        margin-top: 10px;
+      }
+
       &:hover {
         border: 3px solid $brightYellow;
         background: $topaz;
@@ -68,12 +98,36 @@
       background: $white;
       border: 2px solid lightgrey;
       color: #A9A9A9;
+
+      @include media(mobileLarge) {
+        width: 70%;
+      }
+
+      @include media(mobile) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    input.login {
+      @include media(mobile) {
+        width: 65%;
+      }
+    }
+
+    input.register {
+
+      @include media(mobile) {
+        width: 70%;
+        text-indent: 10px;
+      }
+
     }
 
     li {
       margin: 15px auto 0 auto;
       height: 50px;
-      width: 70%;
+      width: 90%;
     }
 
     .modal-header {
@@ -81,6 +135,18 @@
       background: $brightYellow;
       color: $white;
       margin: 0;
+
+      span.login-header {
+        @include media(mobile) {
+          display: none;
+        }
+      }
+
+      span.register {
+        @include media(mobile) {
+          display: none;
+        }
+      }
     }
 
   }
