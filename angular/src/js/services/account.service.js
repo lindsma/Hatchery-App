@@ -2,16 +2,13 @@ angular.module('hatcheryApp').service('accountService', function($http, localSto
 
     console.log('in account service');
 
-    // function getUsers() {
-    //     return localStorageService.get('localStorageUsers') || [];
-    // }
 
-    function getUser(user, password) {
-
+    function getUser(username) {
+      console.log(username);
       $http({
           method: 'GET',
-          url: 'https://glacial-anchorage-56426.herokuapp.com/login',
-          data: user
+          url: 'http://lit-reaches-27413.herokuapp.com/login',
+          data: username
       }).then(function successCallback(response) {
           console.log(response);
       }, function errorCallback(response) {
@@ -24,7 +21,7 @@ angular.module('hatcheryApp').service('accountService', function($http, localSto
 
         $http({
             method: 'POST',
-            url: 'https://glacial-anchorage-56426.herokuapp.com/user',
+            url: 'http://lit-reaches-27413.herokuapp.com/user',
             data: userObj
         }).then(function successCallback(response) {
             console.log(response);

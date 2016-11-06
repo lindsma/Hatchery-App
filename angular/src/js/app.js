@@ -21,11 +21,9 @@
             templateUrl: 'src/templates/admin.html'
         }).state('hatcheryParent.login', {
             url: 'login',
-            controller: 'LoginController as login',
             templateUrl: 'src/templates/login.html'
         }).state('hatcheryParent.register', {
             url: 'register',
-            controller: 'RegisterController as register',
             templateUrl: 'src/templates/register.html'
         });
     });
