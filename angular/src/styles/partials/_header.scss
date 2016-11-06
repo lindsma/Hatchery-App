@@ -5,14 +5,28 @@ header {
       height: 80px;
     }
 
+    @include media(tabletSmall) {
+      height: 65px;
+    }
+
     .chicken-logo {
         height: 100px;
         margin-top: 5px;
         float: left;
         margin-left: 20px;
+        transition: all 1s ease;
 
         @include media(tablet) {
           height: 80px;
+        }
+
+        @include media(tabletSmall) {
+          margin-left: 5px;
+          margin-top: 0;
+        }
+
+        @include media(mobileLarge) {
+          height: 65px;
         }
     }
 
@@ -26,10 +40,19 @@ header {
         @include media(tablet) {
           font-size: 40px;
         }
+
+        @include media(mobileLarge) {
+          font-size: 30px;
+          margin-left: 10px;
+        }
     }
 
     .register {
         margin: 27.5px 50px 0 0;
+
+        @include media(tabletSmall) {
+          margin-right: 20px;
+        }
     }
 
     .login {
@@ -51,6 +74,10 @@ header {
         line-height: 45px;
         transition: all .3s ease;
         text-align: center;
+
+        @include media(tablet) {
+          margin-top: 17.5px;
+        }
 
         &:hover {
             cursor: pointer;
