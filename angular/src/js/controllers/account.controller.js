@@ -1,12 +1,12 @@
 angular.module('hatcheryApp').controller('AccountController', function($scope, accountService, $state) {
-
   $scope.loggedIn = {};
 
     $scope.checkLogin = function(username) {
       accountService.get(username, function(response) {
         $scope.loggedIn = response.data;
-        console.log($scope.loggedIn);
       });
+
+      $state.reload();
     };
 
     $scope.processForm = function(username, email, password) {
