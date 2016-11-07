@@ -1,6 +1,6 @@
 angular.module('hatcheryApp')
 
-.controller('AdminController', function($state,$scope, $http, AdminService,InventoryService){
+.controller('AdminController', function($state,$scope, $http, InventoryService){
 
   this.addEggs = function(number){
       if ($scope.loggedIn.id === 1){
@@ -14,6 +14,7 @@ angular.module('hatcheryApp')
 this.openOrders = function(){
     $('#update-info-form').removeClass('ng-hide').removeClass('closed');
       $scope.orders = InventoryService.getOrders();
+      console.log($scope.orders);
 
 }
 this.goHome = function() {

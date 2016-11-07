@@ -6,6 +6,8 @@ angular.module('hatcheryApp')
   //   InventoryService.setOrder(number);
   // }
 
+  $scope.orders = [{"id":"id","username":"username","eggs":0,"date":Date.now()},{"id":"id","username":"username","eggs":0,"date":Date.now()}];
+
   this.submitEggs = function(editNum){
     $scope.currentEggs.total -= editNum;
     animateEggs(editNum);
@@ -28,18 +30,15 @@ angular.module('hatcheryApp')
 
   }
   this.getOrders = function() {
-    $scope.orders = InventoryService.get('localStorageOrders');
+    this.orders = InventoryService.get('localStorageOrders');
   }
   this.setOrder = function(orderObj) {
       $scope.orders.push(orderObj);
       InventoryService.set('localStorageOrders', $scope.orders);
-      console.log('in setOrder');
       console.log($scope.orders);
   }
   this.createOrder = function(editNum){
-    var orderObj = {"id":$scope.loggedIn.id, "user":$scope.loggedIn.username, "eggs":editNum, "date": Date.now()};
-    console.log("in createOrder");
-    console.log(orderObj);
+    var orderObj = {"id":$scope.loggedIn.id, "username":$scope.loggedIn.username, "eggs":editNum, "date": Date.now()};
     return orderObj;
   }
   this.clearOrders = function() {

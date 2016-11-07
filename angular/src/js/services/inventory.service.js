@@ -20,7 +20,6 @@ angular.module('hatcheryApp')
          });
   }
   this.set = function(name, dataSet) {
-    console.log(dataSet);
     localStorageService.set(name, dataSet);
   }
 
@@ -28,7 +27,7 @@ angular.module('hatcheryApp')
     return localStorageService.get('localStorageLoggedInUser' || []);
   }
   this.getOrders = function() {
-    return localStorageService.get('localStorageOrders') || [];
+    return localStorageService.get('localStorageOrders') || [{"order":"test"}];
   }
 
   this.clear = function(toClear){
