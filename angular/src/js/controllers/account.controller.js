@@ -6,7 +6,7 @@ angular.module('hatcheryApp').controller('AccountController', function($scope, a
         $scope.loggedIn = response.data;
       });
 
-      $state.reload();
+      $state.go('hatcheryParent.home');
     };
 
     $scope.processForm = function(username, email, password) {
@@ -17,7 +17,7 @@ angular.module('hatcheryApp').controller('AccountController', function($scope, a
         };
         accountService.set($scope.formData);
 
-        $state.reload();
+      $state.go('hatcheryParent.home');
     };
 
 });

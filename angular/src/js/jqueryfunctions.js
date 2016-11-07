@@ -12,8 +12,8 @@ $('body').on('click', 'a.login', function(event) {
   $('.login.modal').show();
 });
 
-$('body').on('keypress', function(event) {
-  if (event.which === 13) {
-    $('.modal').remove();
-  }
-});
+// $('body').on('keypress', function(event) {
+//   if (event.which === 13) {
+//     $('.modal').remove();
+//   }
+// });
