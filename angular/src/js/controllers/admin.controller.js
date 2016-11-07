@@ -16,7 +16,6 @@ this.openOrders = function(){
 
 }
 this.goHome = function() {
-  console.log('in');
   $state.go('hatcheryParent.home');
 }
 
