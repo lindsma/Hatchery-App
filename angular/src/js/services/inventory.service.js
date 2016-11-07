@@ -19,7 +19,6 @@ angular.module('hatcheryApp')
              console.log(response);
          });
   }
-
   this.set = function(dataSet) {
     localStorageService.set(dataSet);
   }
