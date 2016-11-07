@@ -1,6 +1,6 @@
 angular.module('hatcheryApp')
 
-.service('InventoryService',function($http){
+.service('InventoryService',function($http,localStorageService){
   /*this function makes an API GET call and performs the callback function specified by the controller*/
   this.getJSON = function(callback){
     $http({
@@ -15,16 +15,20 @@ angular.module('hatcheryApp')
              url: 'http://lit-reaches-27413.herokuapp.com/edit',
              data: object
          }).then(function successCallback(response) {
-             console.log('successCallback');
-             console.log(response);
          }, function errorCallback(response) {
-             console.log('error');
              console.log(response);
          });
   }
-  // this.sendJSONedit = function(object){
-  //   $http.put('http://lit-reaches-27413.herokuapp.com/edit',object);
-  //   console.log(object);
-  // }
 
+  this.set = function(dataSet) {
+    localStorageService.set(dataSet);
+  }
+
+  this.getOrders = function() {
+    return localStorageService.get('localStorageOrders') || [];
+  }
+
+  this.clear = function(toClear){
+    return localStorageService.clear();
+  }
 });

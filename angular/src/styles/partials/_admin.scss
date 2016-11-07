@@ -10,7 +10,7 @@ $bungee: 'Bungee Hairline', cursive;
   font-family: $bungee;
   display: flex;
   align-items: center;
-  background: $topaz;
+  background: transparent;
   position: absolute;
   top: 56%;
   left: 10%;
@@ -40,9 +40,32 @@ $bungee: 'Bungee Hairline', cursive;
       padding: 0;
     }
   }
-  #update-info-form,
+  .user-icon {
+    height: 4vh;
+  }
+  #order-list-container {
+    width: 100%;
+    padding: 2%;
+    margin: 2% 2%;
+    background: $aeroBlue;
+    width: 100%;
+    border: 2px solid $brightYellow;
+    position: relative;
+    top: 32vh;
+  }
+  .list-of-orders {
+    li {
+      margin: 0% 0% 4% 1%;
+      span {
+        margin: 0 4% 0 4%;
+        font-weight: 900;
+      }
+    }
+  }
+
   #update-egg-inventory-form {
     background: $white;
+    color: black;
     height: 40vh;
     width: 67%;
     border: 2px solid $maxBlueGreen;

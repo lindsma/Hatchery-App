@@ -1,7 +1,7 @@
 
 <div ng-cloak class="eggs-show-container" ng-init="inventory.getEggs">
   <div ng-cloak class="current">Current Eggs Available:
-    <div>{{currentEggs.total}}</div>
+    <div ng-model="currentEggs">{{currentEggs.total}}</div>
 
   <label class="enter-egg-number" for="enter-egg-number">How many eggs would you like to claim? </label>
   <input name="enter-egg-number" ng-model="this.number" class="enter-egg-number-input" type="number"/>

@@ -2,18 +2,25 @@ angular.module('hatcheryApp')
 
 .controller('InventoryController', function(InventoryService, $scope, $http, $state) {
 
+  console.log($scope.loggedIn);
+
+  this.submitOrder = function(number) {
+    InventoryService.setOrder(number);
+  }
+
   /* this.getEggs calls the service function getJSON to return a JSON object. The number returned is displayed as current eggs available.*/
   this.getEggs = InventoryService.getJSON(function(response){
-    $scope.currentEggs = response.data || 99;
+    $scope.currentEggs = response.data || 0;
     console.log($scope.currentEggs.total);
     $state.reload;
   })
 
-  /* this.editEggs calls the service function editJSON to put a JSON object*/
   this.submitEggs = function(editNum){
     $scope.currentEggs.total -= editNum;
     animateEggs(editNum);
-    console.log("sendJSONedit: {input: " + editNum + "}");
+    this.setOrder(this.createOrder(editNum));
+
+    editNum = '-' + editNum;
     InventoryService.sendJSONedit({"input": editNum});
   }
 
@@ -30,5 +37,18 @@ angular.module('hatcheryApp')
     },2000);
 
   }
+  this.setOrder = function(orderObj) {
+      $scope.orders.push(orderObj);
+      InventoryService.set('localStorageOrders', $scope.orders);
+      console.log($scope.orders);
+  }
+  this.createOrder = function(editNum){
+    var orderObj = {"id":$scope.loggedIn.id, "user":$scope.loggedIn.username, "eggs":editNum, "date": Date.now()};
+    return orderObj;
+  }
+  this.clearOrders = function() {
+    InventoryService.clear('localStorageOrders');
+  }
+
 
 });
