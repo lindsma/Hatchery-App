@@ -6,7 +6,7 @@ angular.module('hatcheryApp')
       if ($scope.loggedIn.id === 1){
       $scope.currentEggs.total += number;
       InventoryService.sendJSONedit({"input":number});
-      alert("You now have " + $scope.currentEggs.total + " eggs in your inventory!");
+      alert("You now have " + $scope.currentEggs.total + " eggs in your inventory.");
     $('#update-egg-inventory-form').removeClass('ng-hide').removeClass('closed');
 
     }

@@ -12,6 +12,7 @@ angular.module('hatcheryApp').controller('AccountController', function($scope, a
         $scope.loggedIn = response.data;
       });
     };
+    
 
     $scope.processForm = function(username, email, password) {
         $scope.formData = {

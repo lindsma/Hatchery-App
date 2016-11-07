@@ -5,6 +5,7 @@ $tablet-small: 630px;
 $mobile-large: 575px;
 $desktop-mid: 1175px;
 
+
 @mixin media($bp) {
      @if $bp == desktop{
         @media only screen and (max-width: $desktop-width) {
