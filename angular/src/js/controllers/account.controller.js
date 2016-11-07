@@ -14,7 +14,6 @@ angular.module('hatcheryApp').controller('AccountController', function($scope, a
         $scope.loggedIn = response.data;
         goToPage($scope.loggedIn);
         InventoryService.set('localStorageLoggedInUser',$scope.loggedIn);
-        console.log($scope.loggedIn);
       });
     };
     function goToPage(userObj){

@@ -3,18 +3,16 @@ angular.module('hatcheryApp')
 .controller('AdminController', function($state,$scope, $http, InventoryService){
 
   this.addEggs = function(number){
-      if ($scope.loggedIn.id === 1){
       $scope.currentEggs.total += number;
+      console.log($scope.currentEggs.total);
       InventoryService.sendJSONedit({"input":number});
       alert("You now have " + $scope.currentEggs.total + " eggs in your inventory.");
     $('#update-egg-inventory-form').removeClass('ng-hide').removeClass('closed');
-
-    }
   }
+
 this.openOrders = function(){
     $('#update-info-form').removeClass('ng-hide').removeClass('closed');
       $scope.orders = InventoryService.getOrders();
-      console.log($scope.orders);
 
 }
 this.goHome = function() {

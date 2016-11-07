@@ -35,7 +35,6 @@ angular.module('hatcheryApp')
   this.setOrder = function(orderObj) {
       $scope.orders.push(orderObj);
       InventoryService.set('localStorageOrders', $scope.orders);
-      console.log($scope.orders);
   }
   this.createOrder = function(editNum){
     var orderObj = {"id":$scope.loggedIn.id, "username":$scope.loggedIn.username, "eggs":editNum, "date": Date.now()};
