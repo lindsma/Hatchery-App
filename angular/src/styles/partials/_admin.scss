@@ -10,53 +10,105 @@ $bungee: 'Bungee Hairline', cursive;
   font-family: $bungee;
   display: flex;
   align-items: center;
-  background: $topaz;
+  background: transparent;
   position: absolute;
   top: 56%;
   left: 10%;
   width: 80%;
-
+  .buttons {
+    position: relative;
+    width: 31%;
+    height: 27vh;
+    background: $aeroBlue;
+    border: 4px solid $brightYellow;
+    top: 7vh;
+    left: -7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  button {
+    width: 57%;
+    top: 1vh;
+    margin: 3%;
+    position: relative;
+    }
+  }
   #welcome {
     position: absolute;
-    top: 13vh;
+    top: 2vh;
     right: 5%;
     width: 59%;
     background: $topaz;
-    height: 23vh;
+    height: 27vh;
     font-size: 1.4rem;
     color: black;
     text-align: center;
     padding: 3% 1% 2% 1%;
     border: 4px solid $brightYellow;
+    @include media(mobileLarge){
+      font-size: 17px;
+    }
+    @include media(desktopMid){
+      top: 7vh;
+    }
   }
   #update-egg-inventory-form {
     #update-egg-inventory-input {
       width: 30%;
-      transform: translate(121%);
-      margin: 4% auto;
+      position: relative;
+      top: 2vh;
+      left: 30%;
     }
     #update-egg-inventory-button {
-      margin: 9% 40%;
-      padding: 0;
+      position: relative;
+      top: 3vh;
+      left: 33%;
+      width: 30%;
     }
   }
-  #update-info-form,
+  .user-icon {
+    height: 4vh;
+  }
+  #order-list-container {
+    width: 100%;
+    padding: 2%;
+    margin: 2% 2%;
+    background: $aeroBlue;
+    width: 100%;
+    border: 4px solid $brightYellow;
+    position: relative;
+    top: 0vh;
+  }
+  .list-of-orders {
+    li {
+      margin: 0% 0% 4% 1%;
+      span {
+        margin: 0 4% 0 4%;
+        font-weight: 900;
+      }
+    }
+  }
+
   #update-egg-inventory-form {
     background: $white;
+    color: black;
     height: 40vh;
     width: 67%;
-    border: 2px solid $maxBlueGreen;
     font-family: "Rubik", sans-serif;
-    margin: 1%;
-    transform: translate(26%);
     border: 4px solid $brightYellow;
-      img {
-        height: 14%;
-        position: relative;
-        top: 10px;
-        left: 6px;
-        margin: 1%;
-      }
+    text-align: center;
+    padding: 3%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 3vh;
+      //   img {
+      //   height: 14%;
+      //   position: relative;
+      //   top: 10px;
+      //   left: 6px;
+      //   margin: 1%;
+      // }
       input {
         width: 75%;
         line-height: 3rem;
@@ -68,10 +120,6 @@ $bungee: 'Bungee Hairline', cursive;
           outline-color: $maxBlueGreen;
         }
       }
-      button {
-        margin: 4% 42%;
-        padding: 0;
-      }
   }
   .closed {
     position: absolute;
@@ -81,4 +129,11 @@ $bungee: 'Bungee Hairline', cursive;
     position: absolute;
     top: 11vh;
   }
+}
+#egg-carton {
+  position: relative;
+  height: 44px;
+  width: 88px;
+  top: 6vh;
+  left: 34%;
 }

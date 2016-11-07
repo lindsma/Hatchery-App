@@ -1,42 +1,24 @@
 angular.module('hatcheryApp')
 
-.controller('AdminController', function($scope, $http, AdminService,InventoryService){
-
-  $scope.user = {
-    "name": null,
-    "password": null
-
-  };
-  $scope.currentEggs = {
-    "total": 0
-  };
+.controller('AdminController', function($state,$scope, $http, AdminService,InventoryService){
 
   this.addEggs = function(number){
-    if (number > 0){
+      if ($scope.loggedIn.id === 1){
       $scope.currentEggs.total += number;
       InventoryService.sendJSONedit({"input":number});
-      alert("You now have " + $scope.currentEggs.total + " eggs in your inventory!");
-
-  } else {
-    alert("Sorry. You can't un-order eggs.");
-  }
+      alert("You now have " + $scope.currentEggs.total + " eggs in your inventory.");
     $('#update-egg-inventory-form').removeClass('ng-hide').removeClass('closed');
-  }
 
-  this.updateUser = function(name,password,password2){
-    if(password === password2){
-      $scope.user.name = name;
-      $scope.user.password = password;
-      AdminService.sendJSONeditUser($scope.user);
-      console.log($scope.user);
-  } else {
-    alert("oops. Your passwords don't match.");
+    }
   }
-}
-
-function openEditAdmin(){
+this.openOrders = function(){
     $('#update-info-form').removeClass('ng-hide').removeClass('closed');
-}
+      $scope.orders = InventoryService.getOrders();
 
+}
+this.goHome = function() {
+  console.log('in');
+  $state.go('hatcheryParent.home');
+}
 
 });
