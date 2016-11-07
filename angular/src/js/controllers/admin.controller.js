@@ -11,7 +11,6 @@ angular.module('hatcheryApp')
 
     }
   }
-
 this.openOrders = function(){
     $('#update-info-form').removeClass('ng-hide').removeClass('closed');
       $scope.orders = InventoryService.getOrders();
