@@ -72,35 +72,44 @@ html, body {
   text-align: center; }
   @media only screen and (max-width: 300px) {
     .eggs-show-container {
-      background: #FF9F1C; } }
-  .eggs-show-container .current {
-    margin: 2% 2%; }
-    .eggs-show-container .current .submit-btn {
+      background: #ffffff; } }
+  @media only screen and (max-width: 630px) {
+    .eggs-show-container {
+      background: #2EC4B6;
+      height: 53vh; } }
+  @media only screen and (max-width: 768px) {
+    .eggs-show-container {
+      height: 53vh; } }
+  @media only screen and (max-width: 1175px) {
+    .eggs-show-container {
       position: absolute;
-      top: 36vh;
-      margin: 0 auto;
-      position: absolute;
-      top: 35vh;
-      left: 40vw; }
+      height: 60vh;
+      top: 57vh;
+      width: 100%; } }
+
+.current {
+  margin: 2% 2%; }
+  .current .submit-btn {
+    position: absolute;
+    top: 36vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 29vh;
+    left: 40%; }
+
+.current-eggs {
+  color: #FFBF69;
+  font-weight: 900; }
 
 input {
+  text-align: center;
   width: 20vw;
   background: #CBF3F0;
   color: #2EC4B6;
   outline-color: #FF9F1C; }
 
 .enter-egg-number {
-  display: flex;
-  height: 2vh;
-  flex-direction: column;
-  padding: 1%;
-  margin: 1% 6%;
-  font-size: 1.25rem;
-  text-align: center;
-  height: 6vh;
-  position: absolute;
-  top: 17vh;
-  left: 4%; }
+  font-size: 1.25rem; }
 
 .enter-egg-number-input {
   position: absolute;
@@ -108,9 +117,9 @@ input {
   background: #CBF3F0;
   color: #2EC4B6;
   outline-color: #FF9F1C;
-  top: 26vh;
-  line-height: 2rem;
-  left: 44%; }
+  top: 36%;
+  left: 39%;
+  line-height: 2rem; }
 
 .submit-btn {
   margin: 1%;
@@ -120,7 +129,7 @@ input {
   display: block;
   height: 45px;
   float: right;
-  width: 80px;
+  width: 17%;
   border: 3px solid #FF9F1C;
   overflow: hidden;
   background: #FFBF69;
@@ -136,8 +145,9 @@ input {
 
 .bouncing-egg {
   position: absolute;
-  top: 43vh;
-  left: 48%; }
+  top: 38vh;
+  left: 45%;
+  width: 7%; }
 
 .tan-egg {
   height: 24vh;
@@ -565,25 +575,50 @@ header {
   top: 56%;
   left: 10%;
   width: 80%; }
+  .admin .buttons {
+    position: relative;
+    width: 31%;
+    height: 27vh;
+    background: #CBF3F0;
+    border: 4px solid #FF9F1C;
+    top: 7vh;
+    left: -7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .admin .buttons button {
+      width: 57%;
+      top: 1vh;
+      margin: 3%;
+      position: relative; }
   .admin #welcome {
     position: absolute;
-    top: 13vh;
+    top: 2vh;
     right: 5%;
     width: 59%;
     background: #FFBF69;
-    height: 23vh;
+    height: 27vh;
     font-size: 1.4rem;
     color: black;
     text-align: center;
     padding: 3% 1% 2% 1%;
     border: 4px solid #FF9F1C; }
+    @media only screen and (max-width: 575px) {
+      .admin #welcome {
+        font-size: 17px; } }
+    @media only screen and (max-width: 1175px) {
+      .admin #welcome {
+        top: 7vh; } }
   .admin #update-egg-inventory-form #update-egg-inventory-input {
     width: 30%;
-    transform: translate(121%);
-    margin: 4% auto; }
+    position: relative;
+    top: 2vh;
+    left: 30%; }
   .admin #update-egg-inventory-form #update-egg-inventory-button {
-    margin: 9% 40%;
-    padding: 0; }
+    position: relative;
+    top: 3vh;
+    left: 33%;
+    width: 30%; }
   .admin .user-icon {
     height: 4vh; }
   .admin #order-list-container {
@@ -592,9 +627,9 @@ header {
     margin: 2% 2%;
     background: #CBF3F0;
     width: 100%;
-    border: 2px solid #FF9F1C;
+    border: 4px solid #FF9F1C;
     position: relative;
-    top: 32vh; }
+    top: 0vh; }
   .admin .list-of-orders li {
     margin: 0% 0% 4% 1%; }
     .admin .list-of-orders li span {
@@ -605,17 +640,14 @@ header {
     color: black;
     height: 40vh;
     width: 67%;
-    border: 2px solid #2EC4B6;
     font-family: "Rubik", sans-serif;
-    margin: 1%;
-    transform: translate(26%);
-    border: 4px solid #FF9F1C; }
-    .admin #update-egg-inventory-form img {
-      height: 14%;
-      position: relative;
-      top: 10px;
-      left: 6px;
-      margin: 1%; }
+    border: 4px solid #FF9F1C;
+    text-align: center;
+    padding: 3%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 3vh; }
     .admin #update-egg-inventory-form input {
       width: 75%;
       line-height: 3rem;
@@ -625,14 +657,18 @@ header {
       outline-style: solid; }
       .admin #update-egg-inventory-form input:focus {
         outline-color: #2EC4B6; }
-    .admin #update-egg-inventory-form button {
-      margin: 4% 42%;
-      padding: 0; }
   .admin .closed {
     position: absolute;
     top: 22vh; }
   .admin .closed2 {
     position: absolute;
     top: 11vh; }
+
+#egg-carton {
+  position: relative;
+  height: 44px;
+  width: 88px;
+  top: 6vh;
+  left: 34%; }
 
 /*# sourceMappingURL=main.css.map */

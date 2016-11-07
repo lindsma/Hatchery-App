@@ -2,9 +2,8 @@ $tablet-width: 768px;
 $desktop-width: 1024px;
 $mobile-width: 300px;
 $tablet-small: 630px;
-
 $mobile-large: 575px;
-
+$desktop-mid: 1175px;
 
 @mixin media($bp) {
      @if $bp == desktop{
@@ -12,12 +11,16 @@ $mobile-large: 575px;
              @content;
         }
     }
+    @if $bp == desktopMid {
+         @media only screen and (max-width: $desktop-mid){
+            @content;
+        }
+    }
     @if $bp == tablet {
          @media only screen and (max-width: $tablet-width){
             @content;
-       }
-   }
-
+        }
+    }
     @if $bp == tabletSmall {
          @media only screen and (max-width: $tablet-small){
             @content;
@@ -33,5 +36,4 @@ $mobile-large: 575px;
             @content;
         }
     }
-
 }

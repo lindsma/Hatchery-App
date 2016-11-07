@@ -1,25 +1,23 @@
-<div class="admin" ng-cloak>
+<div class="admin" ng-cloak ng-init="$scope.getEggs">
 
-<div id="welcome" class="show3" ng-hide="show3">Welcome, Admin! From this screen you can add eggs to your inventory or view egg orders.
+<div id="welcome" class="show3" ng-hide="show3">Welcome, Admin! <br><br> From this screen you can add eggs to your inventory or view egg orders.
 </div>
-  <button ng-hide="showb"class="update-admin-info closed submit-btn" ng-click="show3=!show3; show=!show; closed=!closed; showb2=!showb2; admin.openOrders()">see<br/>orders</button>
-  <button ng-hide="showb2" class="update-egg-inventory closed2 showb submit-btn" ng-click="show3=!show3; show2=!show2; showb=!showb; closed2=!closed2">add<br>eggs</button>
-
+<aside class="buttons">
+  <button ng-hide="showb"class="update-admin-info closed admin-btn submit-btn" ng-click="show3=!show3; show=!show; closed=!closed; showb2=!showb2; admin.openOrders()">see orders</button>
+  <button ng-hide="showb2" class="update-egg-inventory admin-btn closed2 showb submit-btn" ng-click="show3=!show3; show2=!show2; showb=!showb; closed2=!closed2">add eggs</button>
+  <button class="submit-btn admin-btn return-home-btn"ng-click="admin.goHome()">home page</button>
+</aside>
   <form novalidate ng-hide="!show2" name="update-egg-inventory" id="update-egg-inventory-form" ng-model="$scope.currentEggs">
-    <input id="update-egg-inventory-input" type="number" ng-model="this.number" placeholder={{$scope.currentEggs.total}}/>
+    How many eggs do you want to add to inventory?
+    <input id="update-egg-inventory-input" type="number" ng-model="this.number" placeholder={{$scope.currentEggs.total}}>
     <button id="update-egg-inventory-button" class="submit-btn" type="submit" ng-click="admin.addEggs(this.number)">submit</button>
+    <img alt="egg-carton" id="egg-carton" src="images/animated-egg-image-0044.gif">
   </form>
 
   <div ng-hide="!show" id="order-list-container">
     <ul class="list-of-orders">
-      <li class="list-item">
-        <img src="images/user_icon2.png" alt="user-icon" class="user-icon"><span>DATE</span><span>NAME</span><span>EGG NUMBER</span>
-      </li>
-      <li class="list-item">
-        <img src="images/user_icon2.png" alt="user-icon" class="user-icon"><span>DATE</span><span>NAME</span><span>EGG NUMBER</span>
-      </li>
-      <li class="list-item">
-        <img src="images/user_icon2.png" alt="user-icon" class="user-icon"><span>DATE</span><span>NAME</span><span>EGG NUMBER</span>
+      <li ng-repeat="order in account.orders" class="list-item">
+        <img src="images/user_icon2.png" alt="user-icon" class="user-icon"><span>{{order.date | date:'shortDate'}}</span><span>{{order.username}}</span><span>{{order.eggs}} eggs</span>
       </li>
   </ul>
   <button class="submit-btn clear-btn" ng-click="inventory.clearOrders()">clear all orders</button>
