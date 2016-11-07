@@ -23,15 +23,15 @@
 
     <div class='env-hero' ng-controller='WeatherController as weather'>
         <div class='weather'>
-            <p class='temp'>86<span>&#8457;</span></p>
+            <p class='temp' ng-cloak>{{temp}}<span>&#8457;</span></p>
             <img class='chicken-1' src='images/chickenpeck.gif' alt='chicken gif'>
-            <img class='chicken-2' src='images/chickenpeck.gif' alt='chicken gif'>
-            <img class='chicken-3' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-2' src='images/chickenpeck.png' alt='chicken gif'>
+            <img class='chicken-3' src='images/chickenpeck.png' alt='chicken gif'>
             <img class='chicken-4' src='images/chickenpeck.gif' alt='chicken gif'>
-            <img class='chicken-5' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-5' src='images/chickenpeck.png' alt='chicken gif'>
             <img class='chicken-6' src='images/chickenpeck.gif' alt='chicken gif'>
             <img class='chicken-7' src='images/chickenpeck.gif' alt='chicken gif'>
-            <img class='chicken-8' src='images/chickenpeck.gif' alt='chicken gif'>
+            <img class='chicken-8' src='images/chickenpeck.png' alt='chicken gif'>
             <img class='chicken-9' src='images/chickenpeck.gif' alt='chicken gif'>
         </div>
     </div>
@@ -50,6 +50,7 @@
     <script src="src/js/services/admin.service.js"></script>
     <script src="src/js/controllers/inventory.controller.js"></script>
     <script src="src/js/services/inventory.service.js"></script>
+    <script src="src/js/jqueryfunctions.js"></script>
 
 </body>
 </html>

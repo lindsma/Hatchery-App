@@ -1,10 +1,7 @@
 angular.module('hatcheryApp').service('accountService', function($http, localStorageService) {
 
-    console.log('in account service');
-
-
     function getUser(username, callback) {
-      console.log(username);
+      
       var user = username;
 
       $http({

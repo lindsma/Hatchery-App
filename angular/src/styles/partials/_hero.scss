@@ -17,8 +17,16 @@
       font-family: $rubik;
       text-shadow: 2px 2px $topaz;
 
+      @include media(mobileLarge) {
+        font-size: 65px;
+      }
+
       span {
         font-size: 60px;
+
+        @include media(mobileLarge) {
+          font-size: 45px;
+        }
       }
     }
 
@@ -31,53 +39,105 @@
         height: 100px;
         bottom: 10px;
         left: 10%;
+
+        @include media(desktop) {
+          display: none;
+        }
     }
 
     .chicken-2 {
         height: 150px;
         bottom: 10px;
         left: 50%;
+
+        @include media(tablet) {
+          left: 55%;
+        }
+
+        @include media(mobileLarge) {
+          display: none;
+        }
     }
 
     .chicken-3 {
         height: 320px;
         bottom: 10px;
         left: 60%;
+
+        @include media(desktop) {
+          display: none;
+        }
     }
 
     .chicken-4 {
         height: 100px;
         bottom: 10px;
         left: 65%;
+
+        @include media(tablet) {
+          left: 70%;
+        }
+
+        @include media(tabletSmall) {
+          left: 80%;
+        }
+
+        @include media(mobileLarge) {
+          left: 70%;
+        }
     }
 
     .chicken-5 {
         height: 150px;
         bottom: 10px;
         left: 80%;
+
+        @include media(tabletSmall) {
+          display: none;
+        }
     }
 
     .chicken-6 {
         height: 150px;
         bottom: 10px;
         left: 40%;
+
+        @include media(desktopMid) {
+          display: none;
+        }
     }
 
     .chicken-7 {
         height: 150px;
         bottom: 10px;
         left: 15%;
+
+        @include media(tablet) {
+          left: 10%;
+        }
     }
 
     .chicken-8 {
         height: 100px;
         bottom: 10px;
         left: 5%;
+
+        @include media(tablet) {
+          left: 1%;
+        }
     }
 
     .chicken-9 {
         height: 350px;
         bottom: 10px;
         left: 20%;
+
+        @include media(tablet) {
+          left: 15%;
+        }
+
+        @include media(tabletSmall) {
+          left: 10%;
+        }
     }
 }
