@@ -33,10 +33,13 @@ angular.module('hatcheryApp')
   this.setOrder = function(orderObj) {
       $scope.orders.push(orderObj);
       InventoryService.set('localStorageOrders', $scope.orders);
+      console.log('in setOrder');
       console.log($scope.orders);
   }
   this.createOrder = function(editNum){
     var orderObj = {"id":$scope.loggedIn.id, "user":$scope.loggedIn.username, "eggs":editNum, "date": Date.now()};
+    console.log("in createOrder");
+    console.log(orderObj);
     return orderObj;
   }
   this.clearOrders = function() {

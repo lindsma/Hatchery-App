@@ -19,10 +19,14 @@ angular.module('hatcheryApp')
              console.log(response);
          });
   }
-  this.set = function(dataSet) {
-    localStorageService.set(dataSet);
+  this.set = function(name, dataSet) {
+    console.log(dataSet);
+    localStorageService.set(name, dataSet);
   }
 
+  this.getLoggedInUser = function() {
+    return localStorageService.get('localStorageLoggedInUser' || []);
+  }
   this.getOrders = function() {
     return localStorageService.get('localStorageOrders') || [];
   }
