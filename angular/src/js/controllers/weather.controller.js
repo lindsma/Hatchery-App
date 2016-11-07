@@ -45,26 +45,26 @@ angular.module('hatcheryApp').controller('WeatherController', function(weatherSe
       }
     }
 
-    $scope.getWeather = function() {
-        weatherService.get(function(response) {
-            var conditions = response.data.conditions;
-            var time = new Date();
-            $scope.hour = time.getHours();
-            var temperature = response.data.temperature;
-
-            $scope.temp = temperature.substring(0, 4);
-
-            if (conditions === "Clear") {
-                createClear();
-            } else if (conditions.indexOf("Rain") > -1) {
-                createRain();
-            } else if (conditions.indexOf("Cloudy") > -1) {
-                createCloudy();
-            }
-        });
-    };
-
-    $scope.getWeather();
+    // $scope.getWeather = function() {
+    //     weatherService.get(function(response) {
+    //         var conditions = response.data.conditions;
+    //         var time = new Date();
+    //         $scope.hour = time.getHours();
+    //         var temperature = response.data.temperature;
+    //
+    //         $scope.temp = temperature.substring(0, 4);
+    //
+    //         if (conditions === "Clear") {
+    //             createClear();
+    //         } else if (conditions.indexOf("Rain") > -1) {
+    //             createRain();
+    //         } else if (conditions.indexOf("Cloudy") > -1) {
+    //             createCloudy();
+    //         }
+    //     });
+    // };
+    //
+    // $scope.getWeather();
 
 
 });

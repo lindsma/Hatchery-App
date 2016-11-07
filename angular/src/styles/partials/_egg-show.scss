@@ -34,26 +34,22 @@ $bungee: 'Bungee Hairline', cursive;
       height: 53vh;
     }
     @include media(desktopMid) {
-      position: absolute;
-      height: 60vh;
-      top: 57vh;
-      width: 100%;
+
     }
   }
 .current {
   margin: 2% 2%;
   .submit-btn {
     position: absolute;
-    top: 36vh;
-    margin: 0 auto;
-    position: absolute;
-    top: 29vh;
-    left: 40%;
+    top: 66%;
+    left: 34%;
+    width: 28%;
     }
 }
 .current-eggs {
   color: $topaz;
   font-weight: 900;
+  font-size: 1.1em;
 }
 
 input{
@@ -72,9 +68,11 @@ input{
   background: #CBF3F0;
   color: #2EC4B6;
   outline-color: #FF9F1C;
-  top: 36%;
+  top: 49%;
   left: 39%;
   line-height: 2rem;
+  font-size: 0.8em;
+
 }
 .submit-btn
 {
@@ -94,6 +92,7 @@ input{
   line-height: 15px;
   transition: all .3s ease;
   text-align: center;
+
   &:hover
   {
     cursor: pointer;
@@ -103,9 +102,19 @@ input{
 }
 .bouncing-egg{
   position: absolute;
-  top: 38vh;
+  top: 87%;
   left: 45%;
   width: 7%;
+  @include media(desktopMid){
+    top: 86%;
+    left: 47%;
+    width: 4%;
+  }
+  @include media(tablet){
+    top: 85%;
+    left: 45%;
+    width: 7%;
+  }
 }
 .tan-egg {
   height: 24vh;

@@ -80,26 +80,19 @@ html, body {
   @media only screen and (max-width: 768px) {
     .eggs-show-container {
       height: 53vh; } }
-  @media only screen and (max-width: 1175px) {
-    .eggs-show-container {
-      position: absolute;
-      height: 60vh;
-      top: 57vh;
-      width: 100%; } }
 
 .current {
   margin: 2% 2%; }
   .current .submit-btn {
     position: absolute;
-    top: 36vh;
-    margin: 0 auto;
-    position: absolute;
-    top: 29vh;
-    left: 40%; }
+    top: 66%;
+    left: 34%;
+    width: 28%; }
 
 .current-eggs {
   color: #FFBF69;
-  font-weight: 900; }
+  font-weight: 900;
+  font-size: 1.1em; }
 
 input {
   text-align: center;
@@ -117,9 +110,10 @@ input {
   background: #CBF3F0;
   color: #2EC4B6;
   outline-color: #FF9F1C;
-  top: 36%;
+  top: 49%;
   left: 39%;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-size: 0.8em; }
 
 .submit-btn {
   margin: 1%;
@@ -145,9 +139,19 @@ input {
 
 .bouncing-egg {
   position: absolute;
-  top: 38vh;
+  top: 87%;
   left: 45%;
   width: 7%; }
+  @media only screen and (max-width: 1175px) {
+    .bouncing-egg {
+      top: 86%;
+      left: 47%;
+      width: 4%; } }
+  @media only screen and (max-width: 768px) {
+    .bouncing-egg {
+      top: 85%;
+      left: 45%;
+      width: 7%; } }
 
 .tan-egg {
   height: 24vh;
@@ -683,18 +687,29 @@ header {
   width: 80%; }
   .admin .buttons {
     position: relative;
-    width: 31%;
-    height: 27vh;
     background: #CBF3F0;
     border: 4px solid #FF9F1C;
-    top: 7vh;
-    left: -7%;
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (max-width: 1024px) {
+      .admin .buttons {
+        height: 12vh;
+        flex-direction: row;
+        align-items: center;
+        width: 33%;
+        top: 19vh;
+        left: -10%; } }
+    @media only screen and (max-width: 575px) {
+      .admin .buttons {
+        height: 12vh;
+        align-items: center;
+        width: 100%;
+        top: 62vh;
+        left: 0; } }
     .admin .buttons button {
       width: 57%;
-      top: 1vh;
+      top: 0;
       margin: 3%;
       position: relative; }
   .admin #welcome {
@@ -709,12 +724,17 @@ header {
     text-align: center;
     padding: 3% 1% 2% 1%;
     border: 4px solid #FF9F1C; }
-    @media only screen and (max-width: 575px) {
+    @media only screen and (max-width: 768px) {
       .admin #welcome {
-        font-size: 17px; } }
-    @media only screen and (max-width: 1175px) {
+        font-size: 17px;
+        width: 68%;
+        top: 19vh; } }
+    @media only screen and (max-width: 630px) {
       .admin #welcome {
-        top: 7vh; } }
+        font-size: 17px;
+        width: 100%;
+        top: 19vh;
+        left: 0; } }
   .admin #update-egg-inventory-form #update-egg-inventory-input {
     width: 30%;
     position: relative;
@@ -722,9 +742,14 @@ header {
     left: 30%; }
   .admin #update-egg-inventory-form #update-egg-inventory-button {
     position: relative;
-    top: 3vh;
-    left: 33%;
-    width: 30%; }
+    width: 50%;
+    left: 22%;
+    top: 3vh; }
+    @media only screen and (max-width: 575px) {
+      .admin #update-egg-inventory-form #update-egg-inventory-button {
+        top: 13vh;
+        left: 33%;
+        width: 30%; } }
   .admin .user-icon {
     height: 4vh; }
   .admin #order-list-container {
@@ -753,7 +778,13 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    top: 3vh; }
+    top: 14vh; }
+    @media only screen and (max-width: 630px) {
+      .admin #update-egg-inventory-form {
+        top: 20vh;
+        position: absolute;
+        width: 100%;
+        left: 0; } }
     .admin #update-egg-inventory-form input {
       width: 75%;
       line-height: 3rem;
@@ -774,7 +805,11 @@ header {
   position: relative;
   height: 44px;
   width: 88px;
-  top: 6vh;
-  left: 34%; }
+  top: 4vh;
+  left: 38%; }
+  @media only screen and (max-width: 575px) {
+    #egg-carton {
+      top: -4vh;
+      left: 35%; } }
 
 /*# sourceMappingURL=main.css.map */

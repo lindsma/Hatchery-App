@@ -17,7 +17,7 @@
   <div ng-hide="!show" id="order-list-container">
     <ul class="list-of-orders">
       <li ng-repeat="order in account.orders" class="list-item">
-        <img src="images/user_icon2.png" alt="user-icon" class="user-icon"><span>{{order.date | date:'shortDate'}}</span><span>{{order.username}}</span><span>{{order.eggs}} eggs</span>
+        <img src="images/user_icon2.png" alt="user-icon" class="user-icon"><span>DATE{{order.date}}</span><span>{{order.username}}</span><span>{{order.eggs}} eggs</span>
       </li>
   </ul>
   <button class="submit-btn clear-btn" ng-click="inventory.clearOrders()">clear all orders</button>
