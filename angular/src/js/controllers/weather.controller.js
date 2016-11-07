@@ -49,6 +49,7 @@ angular.module('hatcheryApp').controller('WeatherController', function(weatherSe
         weatherService.get(function(response) {
             var conditions = response.data.conditions;
             var time = new Date();
+
             $scope.hour = time.getHours();
             var temperature = response.data.temperature;
 
