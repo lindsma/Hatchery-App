@@ -135,19 +135,18 @@
       background: $brightYellow;
       color: $white;
       margin: 0;
-
-      span.login-header {
-        @include media(mobile) {
-          display: none;
-        }
-      }
-
-      span.register {
-        @include media(mobile) {
-          display: none;
-        }
-      }
     }
+  }
+}
 
+span.login-header {
+  @include media(mobile) {
+    display: none;
+  }
+}
+
+span.register {
+  @include media(mobile) {
+    display: none;
   }
 }

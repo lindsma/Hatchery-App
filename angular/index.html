@@ -15,8 +15,10 @@
     <header>
         <img class='chicken-logo' src='images/chicken.png' alt='chicken logo'>
         <h1>Hatchery</h1>
-        <a ui-sref='hatcheryParent.register' class='button register'>register</a>
-        <a ui-sref='hatcheryParent.login' class='button login'>login</a>
+        <nav>
+          <a ui-sref='hatcheryParent.register' class='button register'>register</a>
+          <a ui-sref='hatcheryParent.login' class='button login'>login</a>
+        </nav>
     </header>
 
     <div class='env-hero' ng-controller='WeatherController as weather'>

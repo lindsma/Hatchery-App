@@ -1,12 +1,14 @@
 header {
     height: 100px;
-
     @include media(tablet) {
-      height: 80px;
+        height: 80px;
+    }
+    @include media(tabletSmall) {
+        height: 65px;
     }
 
-    @include media(tabletSmall) {
-      height: 65px;
+    @include media(mobileLarge) {
+        height: 75px;
     }
 
     .chicken-logo {
@@ -15,19 +17,16 @@ header {
         float: left;
         margin-left: 20px;
         transition: all 1s ease;
-
         @include media(tablet) {
-          height: 80px;
+            height: 80px;
         }
-
         @include media(tabletSmall) {
-          margin-left: 5px;
-          margin-top: 0;
+            margin-left: 5px;
+            margin-top: 0;
         }
-
         @include media(mobileLarge) {
-          height: 65px;
-          margin-top: 10px;
+            height: 65px;
+            margin-top: 10px;
         }
     }
 
@@ -37,23 +36,23 @@ header {
         font-weight: 900;
         float: left;
         margin: 20px 0 0 20px;
-
         @include media(tablet) {
-          font-size: 40px;
+            font-size: 40px;
         }
-
         @include media(mobileLarge) {
-          font-size: 30px;
-          margin-left: 10px;
-          margin-top: 25px;
+            font-size: 30px;
+            margin-left: 10px;
+            margin-top: 25px;
         }
     }
 
     .register {
         margin: 27.5px 50px 0 0;
-
         @include media(tabletSmall) {
-          margin-right: 20px;
+            margin-right: 20px;
+        }
+        @include media(mobileLarge) {
+            float: none;
         }
     }
 
@@ -74,11 +73,13 @@ header {
         text-decoration: none;
         color: black;
         line-height: 45px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         text-align: center;
-
         @include media(tablet) {
-          margin-top: 17.5px;
+            margin-top: 17.5px;
+        }
+        @include media(mobileLarge) {
+            margin-bottom: 20px;
         }
 
         &:hover {
@@ -86,4 +87,4 @@ header {
             border-radius: 20px;
         }
     }
-  }
+}
