@@ -705,7 +705,7 @@ header {
         height: 12vh;
         align-items: center;
         width: 100%;
-        top: 62vh;
+        top: 20vh;
         left: 0; } }
     .admin .buttons button {
       width: 57%;
@@ -733,7 +733,7 @@ header {
       .admin #welcome {
         font-size: 17px;
         width: 100%;
-        top: 19vh;
+        top: 34vh;
         left: 0; } }
   .admin #update-egg-inventory-form #update-egg-inventory-input {
     width: 30%;
@@ -759,13 +759,22 @@ header {
     background: #CBF3F0;
     width: 100%;
     border: 4px solid #FF9F1C;
-    position: relative;
-    top: 0vh; }
+    position: absolute;
+    top: 34vh; }
   .admin .list-of-orders li {
-    margin: 0% 0% 4% 1%; }
+    border: 1px solid orange;
+    padding: 1%;
+    margin: 1%;
+    font-size: 1.5; }
+    @media only screen and (max-width: 575px) {
+      .admin .list-of-orders li {
+        font-size: 13px; } }
     .admin .list-of-orders li span {
       margin: 0 4% 0 4%;
       font-weight: 900; }
+  @media only screen and (max-width: 575px) {
+    .admin .clear-btn {
+      width: 30%; } }
   .admin #update-egg-inventory-form {
     background: #ffffff;
     color: black;
@@ -781,7 +790,7 @@ header {
     top: 14vh; }
     @media only screen and (max-width: 630px) {
       .admin #update-egg-inventory-form {
-        top: 20vh;
+        top: 35vh;
         position: absolute;
         width: 100%;
         left: 0; } }

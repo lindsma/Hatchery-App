@@ -34,8 +34,7 @@ $bungee: 'Bungee Hairline', cursive;
       height: 12vh;
       align-items: center;
       width: 100%;
-      // top: 19vh;
-      top: 62vh;
+      top: 20vh;
       left: 0;
     }
   button {
@@ -65,7 +64,7 @@ $bungee: 'Bungee Hairline', cursive;
     @include media(tabletSmall){
       font-size: 17px;
       width: 100%;
-      top: 19vh;
+      top: 34vh;
       left: 0;
     }
   }
@@ -99,16 +98,28 @@ $bungee: 'Bungee Hairline', cursive;
     background: $aeroBlue;
     width: 100%;
     border: 4px solid $brightYellow;
-    position: relative;
-    top: 0vh;
-  }
+    position: absolute;
+    top: 34vh;
+    }
   .list-of-orders {
     li {
-      margin: 0% 0% 4% 1%;
+      border: 1px solid orange;
+      padding: 1%;
+      margin: 1%;
+      font-size: 1.5;
+      @include media(mobileLarge){
+      font-size: 13px;
+    }
       span {
         margin: 0 4% 0 4%;
         font-weight: 900;
       }
+    }
+  }
+
+  .clear-btn {
+    @include media(mobileLarge){
+      width: 30%;
     }
   }
 
@@ -126,7 +137,7 @@ $bungee: 'Bungee Hairline', cursive;
     flex-direction: column;
     top: 14vh;
     @include media(tabletSmall){
-      top: 20vh;
+      top: 35vh;
       position: absolute;
       width: 100%;
       left: 0;
