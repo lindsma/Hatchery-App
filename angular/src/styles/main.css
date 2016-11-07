@@ -188,14 +188,29 @@ header {
   @media only screen and (max-width: 768px) {
     header {
       height: 80px; } }
+  @media only screen and (max-width: 630px) {
+    header {
+      height: 65px; } }
+  @media only screen and (max-width: 575px) {
+    header {
+      height: 75px; } }
   header .chicken-logo {
     height: 100px;
     margin-top: 5px;
     float: left;
-    margin-left: 20px; }
+    margin-left: 20px;
+    transition: all 1s ease; }
     @media only screen and (max-width: 768px) {
       header .chicken-logo {
         height: 80px; } }
+    @media only screen and (max-width: 630px) {
+      header .chicken-logo {
+        margin-left: 5px;
+        margin-top: 0; } }
+    @media only screen and (max-width: 575px) {
+      header .chicken-logo {
+        height: 65px;
+        margin-top: 10px; } }
   header h1 {
     font-family: "Bungee Hairline", cursive;
     font-size: 60px;
@@ -205,8 +220,19 @@ header {
     @media only screen and (max-width: 768px) {
       header h1 {
         font-size: 40px; } }
+    @media only screen and (max-width: 575px) {
+      header h1 {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-top: 25px; } }
   header .register {
     margin: 27.5px 50px 0 0; }
+    @media only screen and (max-width: 630px) {
+      header .register {
+        margin-right: 20px; } }
+    @media only screen and (max-width: 575px) {
+      header .register {
+        float: none; } }
   header .login {
     margin: 27.5px 20px 0 0; }
   header .button {
@@ -222,14 +248,21 @@ header {
     text-decoration: none;
     color: black;
     line-height: 45px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      header .button {
+        margin-top: 17.5px; } }
+    @media only screen and (max-width: 575px) {
+      header .button {
+        margin-bottom: 20px; } }
     header .button:hover {
       cursor: pointer;
       border-radius: 20px; }
 
 .env-hero {
   height: 300px;
+  width: 100%;
   background: #CBF3F0;
   position: relative;
   margin-bottom: 50px;
@@ -244,8 +277,14 @@ header {
     font-size: 80px;
     font-family: "Rubik", sans-serif;
     text-shadow: 2px 2px #FFBF69; }
+    @media only screen and (max-width: 575px) {
+      .env-hero .temp {
+        font-size: 65px; } }
     .env-hero .temp span {
       font-size: 60px; }
+      @media only screen and (max-width: 575px) {
+        .env-hero .temp span {
+          font-size: 45px; } }
   .env-hero img {
     float: right;
     position: absolute; }
@@ -253,38 +292,77 @@ header {
     height: 100px;
     bottom: 10px;
     left: 10%; }
+    @media only screen and (max-width: 1024px) {
+      .env-hero .chicken-1 {
+        display: none; } }
   .env-hero .chicken-2 {
     height: 150px;
     bottom: 10px;
     left: 50%; }
+    @media only screen and (max-width: 768px) {
+      .env-hero .chicken-2 {
+        left: 55%; } }
+    @media only screen and (max-width: 575px) {
+      .env-hero .chicken-2 {
+        display: none; } }
   .env-hero .chicken-3 {
     height: 320px;
     bottom: 10px;
     left: 60%; }
+    @media only screen and (max-width: 1024px) {
+      .env-hero .chicken-3 {
+        display: none; } }
   .env-hero .chicken-4 {
     height: 100px;
     bottom: 10px;
     left: 65%; }
+    @media only screen and (max-width: 768px) {
+      .env-hero .chicken-4 {
+        left: 70%; } }
+    @media only screen and (max-width: 630px) {
+      .env-hero .chicken-4 {
+        left: 80%; } }
+    @media only screen and (max-width: 575px) {
+      .env-hero .chicken-4 {
+        left: 70%; } }
   .env-hero .chicken-5 {
     height: 150px;
     bottom: 10px;
     left: 80%; }
+    @media only screen and (max-width: 630px) {
+      .env-hero .chicken-5 {
+        display: none; } }
   .env-hero .chicken-6 {
     height: 150px;
     bottom: 10px;
     left: 40%; }
+    @media only screen and (max-width: 1175px) {
+      .env-hero .chicken-6 {
+        display: none; } }
   .env-hero .chicken-7 {
     height: 150px;
     bottom: 10px;
     left: 15%; }
+    @media only screen and (max-width: 768px) {
+      .env-hero .chicken-7 {
+        left: 10%; } }
   .env-hero .chicken-8 {
     height: 100px;
     bottom: 10px;
     left: 5%; }
+    @media only screen and (max-width: 768px) {
+      .env-hero .chicken-8 {
+        left: 1%; } }
   .env-hero .chicken-9 {
     height: 350px;
     bottom: 10px;
     left: 20%; }
+    @media only screen and (max-width: 768px) {
+      .env-hero .chicken-9 {
+        left: 15%; } }
+    @media only screen and (max-width: 630px) {
+      .env-hero .chicken-9 {
+        left: 10%; } }
 
 .rain {
   height: 100%;
@@ -309,7 +387,8 @@ header {
   to {
     margin-top: 900px; } }
 .cloudy {
-  position: relative; }
+  position: relative;
+  background: lightgrey; }
 
 .cloud {
   width: 200px;
@@ -471,19 +550,42 @@ header {
   position: fixed;
   top: 137px;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  transition: all 1s ease; }
+  @media only screen and (max-width: 1175px) {
+    .modal {
+      width: 50%; } }
+  @media only screen and (max-width: 1024px) {
+    .modal {
+      width: 60%; } }
+  @media only screen and (max-width: 768px) {
+    .modal {
+      width: 75%; } }
+  @media only screen and (max-width: 630px) {
+    .modal {
+      width: 85%; } }
+  @media only screen and (max-width: 575px) {
+    .modal {
+      width: 80%; } }
   .modal .modal-content {
     font-family: "Rubik", sans-serif;
     height: 100%; }
     .modal .modal-content img {
       height: 40px;
       margin-bottom: -10px; }
+      @media only screen and (max-width: 300px) {
+        .modal .modal-content img {
+          height: 30px;
+          margin-bottom: -5px; } }
     .modal .modal-content h3 {
       display: inline;
       font-size: 28px;
       margin-left: 5%;
       line-height: 40px;
       letter-spacing: .1em; }
+      @media only screen and (max-width: 575px) {
+        .modal .modal-content h3 {
+          font-size: 18px; } }
     .modal .modal-content .close {
       float: right;
       width: 20px;
@@ -502,6 +604,9 @@ header {
       border-radius: 5px;
       transform: translateX(-50%);
       letter-spacing: .1em; }
+      @media only screen and (max-width: 300px) {
+        .modal .modal-content .submit {
+          margin-top: 10px; } }
       .modal .modal-content .submit:hover {
         border: 3px solid #FF9F1C;
         background: #FFBF69;
@@ -518,15 +623,37 @@ header {
       background: #ffffff;
       border: 2px solid lightgrey;
       color: #A9A9A9; }
+      @media only screen and (max-width: 575px) {
+        .modal .modal-content input.login, .modal .modal-content input.register {
+          width: 70%; } }
+      @media only screen and (max-width: 300px) {
+        .modal .modal-content input.login, .modal .modal-content input.register {
+          font-size: 20px;
+          line-height: 30px; } }
+    @media only screen and (max-width: 300px) {
+      .modal .modal-content input.login {
+        width: 65%; } }
+    @media only screen and (max-width: 300px) {
+      .modal .modal-content input.register {
+        width: 70%;
+        text-indent: 10px; } }
     .modal .modal-content li {
       margin: 15px auto 0 auto;
       height: 50px;
-      width: 70%; }
+      width: 90%; }
     .modal .modal-content .modal-header {
       height: 40px;
       background: #FF9F1C;
       color: #ffffff;
       margin: 0; }
+
+@media only screen and (max-width: 300px) {
+  span.login-header {
+    display: none; } }
+
+@media only screen and (max-width: 300px) {
+  span.register {
+    display: none; } }
 
 .admin {
   font-family: "Bungee Hairline", cursive;
