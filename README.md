@@ -14,7 +14,7 @@ Utilize the following languages/tools to make an app of your choice:
 * User Interface - Ensure the project has a cohesive, clean design
 * Leverage jQuery for DOM manipulation
 
-Hatchery was created to simplify and organize the ordering process for a classmate's farm-fresh eggs. We utilized the Weather Underground API to include a fun feature where users can see current weather conditions of Durham, NC - where their tasty eggs are being produced. 
+Hatchery was created to simplify and organize the ordering process for a classmate's farm-fresh eggs. We utilized the Weather Underground API to include a fun feature where users can see current weather conditions of Durham, NC, where their tasty eggs are being produced. 
 
 #### Iron Yard Homework
 * [Week 1 - Basic Form Design](https://github.com/lindsma/basicFormDesign)
