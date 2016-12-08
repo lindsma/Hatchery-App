@@ -35,7 +35,7 @@ Hatchery was created to simplify and organize the ordering process for a classma
 * [Week 5 - Petsy](https://github.com/lindsma/week-long-website)
 * [Week 6 - Todo List](https://github.com/lindsma/fee-todo)
 * [Week 6 - Double Jeopardy](https://github.com/lindsma/jeopardy)
-* [Week 6 - Brainsto.rm]()
+* [Week 6 - Brainsto.rm](https://github.com/lindsma/brainstorm-3.0)
 * [Week 7 - Shopular](https://github.com/lindsma/Shopular)
 * [Week 7 - Shopular Admin Editing](https://github.com/lindsma/Shopular-Remix)
 * [Week 7 - Shopular Persist](https://github.com/lindsma/Shopular-Persistence)
