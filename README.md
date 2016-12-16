@@ -4,6 +4,8 @@ https://lindsma.github.io/Hatchery-App/angular
 
 ## Week 8
 
+** Note: Please load unsafe scripts for the Weather Underground API
+
 #### Objective:
 Utilize the following languages/tools to make an app of your choice: 
 * An agile Trello board with user stories
